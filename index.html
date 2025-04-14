@@ -1053,50 +1053,43 @@
     <h2>よくある質問（FAQ）</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <input type="checkbox" id="faq-1" class="faq-toggle" checked>
-        <label for="faq-1" class="faq-question">Q. 地方在住でも参加できますか？</label>
+        <div class="faq-question">Q. 地方在住でも参加できますか？</div>
         <div class="faq-answer">
           <p>A. はい、どこに住んでいても参加できます。兵庫県外でも「地域に関わりたい」「兵庫が好き」という気持ちがあれば、どなたでも歓迎です。</p>
         </div>
       </div>
       <div class="faq-item">
-        <input type="checkbox" id="faq-2" class="faq-toggle">
-        <label for="faq-2" class="faq-question">Q. 初対面の人と話すのが苦手なのですが、大丈夫でしょうか？</label>
+        <div class="faq-question">Q. 初対面の人と話すのが苦手なのですが、大丈夫でしょうか？</div>
         <div class="faq-answer">
           <p>A. はい、無理のないペースで参加いただけます。「見るだけ」「読むだけ」でもOK。初参加の方にはスタッフがフォローも行います。</p>
         </div>
       </div>
       <div class="faq-item">
-        <input type="checkbox" id="faq-3" class="faq-toggle">
-        <label for="faq-3" class="faq-question">Q. 投稿や発信をしないといけませんか？</label>
+        <div class="faq-question">Q. 投稿や発信をしないといけませんか？</div>
         <div class="faq-answer">
           <p>A. いいえ、発信は必須ではありません。気が向いたときだけの参加も歓迎です。自分のペースで関わっていただけます。</p>
         </div>
       </div>
       <div class="faq-item">
-        <input type="checkbox" id="faq-4" class="faq-toggle">
-        <label for="faq-4" class="faq-question">Q. 忙しくてあまり参加できないかもしれません…</label>
+        <div class="faq-question">Q. 忙しくてあまり参加できないかもしれません…</div>
         <div class="faq-answer">
           <p>A. 大丈夫です。ジモポート兵庫は「ゆるく関われること」を大切にしています。気が向いたときだけ参加いただければOKです。</p>
         </div>
       </div>
       <div class="faq-item">
-        <input type="checkbox" id="faq-5" class="faq-toggle">
-        <label for="faq-5" class="faq-question">Q. 年齢層や職業に偏りはありますか？</label>
+        <div class="faq-question">Q. 年齢層や職業に偏りはありますか？</div>
         <div class="faq-answer">
           <p>A. 20〜40代を中心に、会社員、フリーランス、学生、主婦など、さまざまな方が参加しています。どんな方でも安心してご参加いただけます。</p>
         </div>
       </div>
       <div class="faq-item">
-        <input type="checkbox" id="faq-6" class="faq-toggle">
-        <label for="faq-6" class="faq-question">Q. 退会はいつでもできますか？</label>
+        <div class="faq-question">Q. 退会はいつでもできますか？</div>
         <div class="faq-answer">
           <p>A. はい。更新日前であればいつでも退会可能です。LINEからのご連絡で簡単に手続きできます。</p>
         </div>
       </div>
       <div class="faq-item">
-        <input type="checkbox" id="faq-7" class="faq-toggle">
-        <label for="faq-7" class="faq-question">Q. どうやって参加すればいいですか？</label>
+        <div class="faq-question">Q. どうやって参加すればいいですか？</div>
         <div class="faq-answer">
           <p>A. まずは公式LINEに登録してください。登録後、申込フォーム・決済案内が届きます。完了後にご参加いただけます。</p>
         </div>
@@ -1171,58 +1164,43 @@
 </html>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-  // FAQトグル - 一つだけ開く機能
-  const faqToggles = document.querySelectorAll('.faq-toggle');
-  
-  faqToggles.forEach(toggle => {
-    toggle.addEventListener('change', function() {
-      if (this.checked) {
-        // 他のすべてのトグルをオフにする
-        faqToggles.forEach(otherToggle => {
-          if (otherToggle !== this) {
-            otherToggle.checked = false;
-          }
+document.addEventListener('DOMContentLoaded', function () {
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+
+    // 初期状態：閉じる
+    answer.style.maxHeight = '0';
+    answer.style.overflow = 'hidden';
+    answer.style.transition = 'max-height 0.3s ease, margin-top 0.3s ease';
+    answer.style.marginTop = '0';
+
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // まず全て閉じる
+      faqItems.forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-answer').style.maxHeight = '0';
+        i.querySelector('.faq-answer').style.marginTop = '0';
+        i.querySelector('.faq-question').classList.remove('active');
+      });
+
+      // 一度閉じていた場合は再び開く処理へ（1フレーム待ってから）
+      if (!isOpen) {
+        requestAnimationFrame(() => {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          answer.style.marginTop = '15px';
+          question.classList.add('active');
         });
       }
     });
   });
 });
-  
-  // スクロール時のアニメーション
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  };
-  
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-  
-  document.querySelectorAll('.service-card, .step, .pricing-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
-  });
-  
-  // クラスが追加されたときのスタイル
-  document.head.insertAdjacentHTML('beforeend', `
-    <style>
-      .fade-in {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-      }
-    </style>
-  `);
-});
-  </script>
+</script>
 </body>
 </html>
 
