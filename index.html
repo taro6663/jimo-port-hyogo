@@ -1,0 +1,1224 @@
+{\rtf1\ansi\ansicpg932\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red42\green44\blue51;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c21961\c22745\c25882;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="ja">\
+<head>\
+  <meta charset="UTF-8">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">\
+  <meta name="description" content="\uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12398 \u20837 \u20250 \u26696 \u20869 \u12506 \u12540 \u12472 \u12290 \u22320 \u22495 \u12392 \u12388 \u12394 \u12364 \u12427 \u20250 \u21729 \u21046 \u12467 \u12511 \u12517 \u12491 \u12486 \u12451 \u12398 \u12372 \u32057 \u20171 \u12391 \u12377 \u12290 ">\
+  <title>\uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u65372 \u20837 \u20250 \u26696 \u20869 </title>\
+  <link rel="preconnect" href="https://fonts.googleapis.com">\
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">\
+  <style>\
+    /* \uc0\u22522 \u26412 \u22793 \u25968  */\
+    :root \{\
+      --primary: #C25F69;\
+      --primary-light: #D3939B;\
+      --primary-bg: rgba(194, 95, 105, 0.05);\
+      --text: #333333;\
+      --text-light: #666666;\
+      --light-gray: #f8f8f8;\
+      --medium-gray: #e8e8e8;\
+      --white: #ffffff;\
+      --font-size-base: 1rem;\
+      --line-height-base: 1.7;\
+      --container-padding: 20px;\
+    \}\
+\
+/* \uc0\u12522 \u12475 \u12483 \u12488 \u12392 \u22522 \u26412 \u35373 \u23450  */\
+    html, body \{\
+      overflow-x: hidden;\
+      width: 100%;\
+      position: relative;\
+      margin: 0;\
+      padding: 0;\
+    \}\
+\
+    * \{\
+      margin: 0;\
+      padding: 0;\
+      box-sizing: border-box;\
+      max-width: 100%;\
+    \}\
+\
+    body \{\
+      font-family: 'Noto Sans JP', sans-serif;\
+      line-height: var(--line-height-base);\
+      color: var(--text);\
+      background-color: var(--white);\
+      font-size: var(--font-size-base);\
+      font-weight: 400;\
+      overflow-wrap: break-word;\
+      word-break: normal;\
+    \}\
+\
+    img \{\
+      max-width: 100%;\
+      height: auto;\
+    \}\
+\
+    .container \{\
+      max-width: 1000px;\
+      margin: 0 auto;\
+      padding: 0 var(--container-padding);\
+      width: 100%;\
+    \}\
+    \
+    /* SP\uc0\u29992 \u12398 \u25913 \u34892  */\
+    .sp-only \{\
+      display: none;\
+    \}\
+\
+    /* \uc0\u12504 \u12483 \u12480 \u12540  */\
+    header \{\
+      background-color: var(--white);\
+      border-bottom: 1px solid var(--medium-gray);\
+      position: fixed;\
+      top: 0;\
+      left: 0;\
+      right: 0;\
+      z-index: 100;\
+    \}\
+\
+    .header-inner \{\
+      display: flex;\
+      justify-content: space-between;\
+      align-items: center;\
+      padding: 15px 0;\
+    \}\
+\
+    .logo \{\
+      height: 36px;\
+    \}\
+\
+    /* \uc0\u12513 \u12452 \u12531 \u12499 \u12472 \u12517 \u12450 \u12523  */\
+    .main-visual \{\
+      background-color: var(--white);\
+      padding: 180px 0 100px;\
+      text-align: center;\
+      min-height: 100vh;\
+      display: flex;\
+      flex-direction: column;\
+      justify-content: center;\
+      position: relative;\
+      width: 100%;\
+    \}\
+\
+    .main-visual::after \{\
+      content: "";\
+      position: absolute;\
+      bottom: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100px;\
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);\
+      z-index: 1;\
+    \}\
+\
+    .main-visual-content \{\
+      max-width: 700px;\
+      margin: 0 auto;\
+      position: relative;\
+      z-index: 2;\
+      width: 100%;\
+    \}\
+\
+    .main-visual-logo \{\
+      width: 220px;\
+      height: 220px;\
+      margin: 0 auto 50px;\
+      font-size: 2rem;\
+      font-weight: 700;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      border: 2px solid var(--primary);\
+      color: var(--primary);\
+      position: relative;\
+      overflow: hidden;\
+      transition: transform 0.5s ease;\
+    \}\
+    \
+    .main-visual-logo:hover \{\
+      transform: scale(1.05);\
+    \}\
+\
+    .main-visual h1 \{\
+      font-size: 2.6rem;\
+      font-weight: 700;\
+      margin-bottom: 25px;\
+      color: var(--text);\
+      line-height: 1.3;\
+    \}\
+\
+    .main-visual p \{\
+      font-size: 1.1rem;\
+      color: var(--text-light);\
+      margin-bottom: 40px;\
+      line-height: 1.9;\
+      overflow-wrap: break-word;\
+      word-break: keep-all;\
+    \}\
+\
+    /* \uc0\u12475 \u12463 \u12471 \u12519 \u12531 \u20849 \u36890 \u12473 \u12479 \u12452 \u12523  */\
+    section \{\
+      padding: 80px 0;\
+      border-bottom: 1px solid var(--medium-gray);\
+      width: 100%;\
+    \}\
+\
+    section h2 \{\
+      font-size: 2rem;\
+      font-weight: 700;\
+      color: var(--text);\
+      text-align: center;\
+      margin-bottom: 50px;\
+    \}\
+\
+    section h3 \{\
+      font-size: 1.2rem;\
+      font-weight: 700;\
+      color: var(--text);\
+      margin-bottom: 15px;\
+    \}\
+\
+    .section-intro \{\
+      text-align: center;\
+      max-width: 700px;\
+      margin: 0 auto 60px;\
+      color: var(--text-light);\
+      font-size: 1.05rem;\
+      overflow-wrap: break-word;\
+      word-break: keep-all;\
+      width: 100%;\
+    \}\
+\
+    .section-intro p \{\
+      margin-bottom: 20px;\
+      width: 100%;\
+    \}\
+\
+    /* \uc0\u12467 \u12531 \u12475 \u12503 \u12488  */\
+    .concept \{\
+      background-color: var(--white);\
+    \}\
+\
+    /* \uc0\u12479 \u12540 \u12466 \u12483 \u12488  */\
+    .target \{\
+      background-color: var(--light-gray);\
+    \}\
+\
+    .target-grid \{\
+      display: grid;\
+      grid-template-columns: repeat(3, 1fr);\
+      gap: 30px;\
+      width: 100%;\
+      margin: 0 auto;\
+    \}\
+\
+    .target-card \{\
+      background-color: var(--white);\
+      border-radius: 8px;\
+      padding: 30px;\
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);\
+      opacity: 0;\
+      animation: fadeInUp 0.8s ease forwards;\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+\
+    .target-card:nth-child(1) \{\
+      animation-delay: 0.3s;\
+    \}\
+\
+    .target-card:nth-child(2) \{\
+      animation-delay: 0.6s;\
+    \}\
+\
+    .target-card:nth-child(3) \{\
+      animation-delay: 0.9s;\
+    \}\
+\
+    @keyframes fadeInUp \{\
+      from \{\
+        opacity: 0;\
+        transform: translateY(20px);\
+      \}\
+      to \{\
+        opacity: 1;\
+        transform: translateY(0);\
+      \}\
+    \}\
+\
+    .target-card-image \{\
+      width: 100px;\
+      height: 100px;\
+      margin: 0 auto 20px;\
+      background-color: var(--primary-bg);\
+      border-radius: 10px;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      position: relative;\
+      overflow: hidden;\
+    \}\
+    \
+    .target-card-image::before \{\
+      content: "";\
+      position: absolute;\
+      top: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100%;\
+      background-size: 60%;\
+      background-position: center;\
+      background-repeat: no-repeat;\
+      opacity: 0.7;\
+    \}\
+    \
+    .target-card-image.friends::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .target-card-image.hobby::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .target-card-image.local::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z' /%3E%3C/svg%3E");\
+    \}\
+\
+    /* \uc0\u12469 \u12540 \u12499 \u12473 \u19968 \u35239  */\
+    .services \{\
+      background-color: var(--white);\
+    \}\
+\
+    .service-highlight \{\
+      margin-bottom: 50px;\
+      background-color: var(--light-gray);\
+      border-radius: 8px;\
+      padding: 40px;\
+      display: flex;\
+      align-items: center;\
+      gap: 30px;\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+\
+    .service-highlight-content \{\
+      flex: 1;\
+      width: 100%;\
+    \}\
+\
+    .service-highlight-image \{\
+      width: 150px;\
+      height: 150px;\
+      background-color: var(--primary-bg);\
+      border-radius: 8px;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      position: relative;\
+      overflow: hidden;\
+      flex-shrink: 0;\
+    \}\
+    \
+    .service-highlight-image::before \{\
+      content: "";\
+      position: absolute;\
+      top: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100%;\
+      background-size: 50%;\
+      background-position: center;\
+      background-repeat: no-repeat;\
+      opacity: 0.8;\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /%3E%3C/svg%3E");\
+    \}\
+\
+    .services-grid \{\
+      display: grid;\
+      grid-template-columns: repeat(2, 1fr);\
+      gap: 25px;\
+      width: 100%;\
+      margin: 0 auto;\
+      grid-auto-flow: row;\
+    \}\
+    \
+    .service-card \{\
+      background-color: var(--light-gray);\
+      border-radius: 8px;\
+      padding: 30px;\
+      display: flex;\
+      align-items: center;\
+      gap: 20px;\
+      transition: transform 0.3s ease, box-shadow 0.3s ease;\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+    \
+    .service-card:hover \{\
+      transform: translateY(-5px);\
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);\
+    \}\
+\
+    .service-card-image \{\
+      width: 60px;\
+      height: 60px;\
+      background-color: var(--white);\
+      border-radius: 8px;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      flex-shrink: 0;\
+      position: relative;\
+      overflow: hidden;\
+    \}\
+    \
+    .service-card-image::before \{\
+      content: "";\
+      position: absolute;\
+      top: 0;\
+      left: 0;\
+      width: 100%;\
+      height: 100%;\
+      background-size: 60%;\
+      background-position: center;\
+      background-repeat: no-repeat;\
+      opacity: 0.7;\
+    \}\
+    \
+    .service-card-image.club::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.pass::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.report::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.school::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.news::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.board::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.job::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.love::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.shop::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z' /%3E%3C/svg%3E");\
+    \}\
+    \
+    .service-card-image.travel::before \{\
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z' /%3E%3C/svg%3E");\
+    \}\
+\
+    .service-card-content \{\
+      flex: 1;\
+      width: 100%;\
+    \}\
+\
+    .service-card-content h3 \{\
+      margin-bottom: 10px;\
+    \}\
+\
+    /* \uc0\u20250 \u36027 \u12503 \u12521 \u12531  */\
+    .pricing \{\
+      background-color: var(--light-gray);\
+    \}\
+\
+    .pricing-cards \{\
+      display: flex;\
+      justify-content: center;\
+      gap: 30px;\
+      margin-bottom: 40px;\
+      width: 100%;\
+    \}\
+\
+    .pricing-card \{\
+      background-color: var(--white);\
+      border-radius: 8px;\
+      padding: 40px;\
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);\
+      flex: 1;\
+      max-width: 400px;\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+\
+    .price \{\
+      font-size: 2.2rem;\
+      font-weight: 700;\
+      margin: 20px 0;\
+      color: var(--primary);\
+    \}\
+\
+    .price-note \{\
+      font-size: 0.9rem;\
+      color: var(--text-light);\
+    \}\
+\
+    /* \uc0\u20837 \u20250 \u12398 \u27969 \u12428  */\
+    .steps \{\
+      background-color: var(--white);\
+    \}\
+\
+    .steps-container \{\
+      max-width: 700px;\
+      margin: 0 auto;\
+      width: 100%;\
+    \}\
+\
+    .steps-heading \{\
+      text-align: center;\
+      margin-bottom: 30px;\
+      font-weight: 700;\
+      font-size: 1.3rem;\
+    \}\
+\
+    .steps \{\
+      display: flex;\
+      flex-direction: column;\
+      gap: 20px;\
+      width: 100%;\
+    \}\
+\
+    .step \{\
+      background-color: var(--white);\
+      border-radius: 8px;\
+      padding: 25px;\
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);\
+      display: flex;\
+      align-items: center;\
+      gap: 15px;\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+\
+    .step-number \{\
+      width: 40px;\
+      height: 40px;\
+      border-radius: 50%;\
+      background-color: var(--primary);\
+      color: white;\
+      display: flex;\
+      align-items: center;\
+      justify-content: center;\
+      font-weight: 700;\
+      font-size: 1.2rem;\
+      flex-shrink: 0;\
+    \}\
+\
+    .step-content \{\
+      flex: 1;\
+      width: 100%;\
+    \}\
+\
+    .step-content h3 \{\
+      margin-bottom: 5px;\
+    \}\
+\
+    /* FAQ */\
+    .faq \{\
+      background-color: var(--white);\
+    \}\
+\
+    .faq-list \{\
+      max-width: 700px;\
+      margin: 0 auto;\
+      width: 100%;\
+    \}\
+\
+    .faq-item \{\
+      border-bottom: 1px solid var(--medium-gray);\
+      padding: 25px 0;\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+\
+    .faq-question \{\
+      font-weight: 700;\
+      display: flex;\
+      justify-content: space-between;\
+      align-items: center;\
+      cursor: pointer;\
+      width: 100%;\
+    \}\
+\
+    .faq-question:after \{\
+      content: "+";\
+      font-size: 1.5rem;\
+      color: var(--primary);\
+      flex-shrink: 0;\
+    \}\
+\
+    .faq-question.active:after \{\
+      content: "-";\
+    \}\
+\
+    .faq-answer \{\
+      margin-top: 15px;\
+      color: var(--text-light);\
+      display: none;\
+      width: 100%;\
+    \}\
+\
+    /* \uc0\u12513 \u12483 \u12475 \u12540 \u12472  */\
+    .message \{\
+      background-color: var(--light-gray);\
+    \}\
+\
+    .message-container \{\
+      max-width: 700px;\
+      margin: 0 auto;\
+      width: 100%;\
+    \}\
+\
+    .message-box \{\
+      background-color: var(--white);\
+      border-radius: 8px;\
+      padding: 40px;\
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);\
+      width: 100%;\
+      box-sizing: border-box;\
+      word-wrap: break-word;\
+      overflow-wrap: break-word;\
+    \}\
+\
+    .message-signature \{\
+      text-align: right;\
+      margin-top: 30px;\
+      font-weight: 500;\
+    \}\
+\
+    /* CTA */\
+    .cta \{\
+      background-color: var(--white);\
+      text-align: center;\
+    \}\
+\
+    .cta-button \{\
+      display: inline-block;\
+      background: var(--primary);\
+      color: white;\
+      padding: 16px 60px;\
+      text-decoration: none;\
+      border-radius: 4px;\
+      font-weight: 600;\
+      font-size: 1rem;\
+      transition: background 0.3s ease;\
+      margin-top: 20px;\
+      letter-spacing: 1px;\
+    \}\
+\
+    .cta-button:hover \{\
+      background: var(--primary-light);\
+    \}\
+\
+    /* \uc0\u12501 \u12483 \u12479 \u12540  */\
+    footer \{\
+      background-color: var(--light-gray);\
+      padding: 50px 0;\
+      text-align: center;\
+      width: 100%;\
+    \}\
+\
+    .footer-logo \{\
+      height: 30px;\
+      margin-bottom: 20px;\
+    \}\
+\
+    .copyright \{\
+      font-size: 0.9rem;\
+      color: var(--text-light);\
+    \}\
+\
+    /* \uc0\u12524 \u12473 \u12509 \u12531 \u12471 \u12502 \u35519 \u25972  */\
+    @media (max-width: 768px) \{\
+      :root \{\
+        --font-size-base: 0.95rem;\
+        --line-height-base: 1.5;\
+        --container-padding: 15px;\
+      \}\
+      \
+      .sp-only \{\
+        display: inline;\
+      \}\
+      \
+      .main-visual \{\
+        padding: 120px 0 60px;\
+        width: 100%;\
+      \}\
+      \
+      .main-visual-content \{\
+        width: 100%;\
+      \}\
+      \
+      .main-visual h1 \{\
+        font-size: 2rem;\
+      \}\
+      \
+      .main-visual p \{\
+        font-size: 1rem;\
+        line-height: 1.7;\
+      \}\
+      \
+      section \{\
+        padding: 60px 0;\
+        width: 100%;\
+      \}\
+      \
+      .section-intro \{\
+        width: 100%;\
+      \}\
+      \
+      .section-intro p \{\
+        line-height: 1.6;\
+      \}\
+      \
+      .target-grid \{\
+        grid-template-columns: 1fr;\
+      \}\
+      \
+      .service-highlight \{\
+        flex-direction: column;\
+        text-align: center;\
+        padding: 30px;\
+      \}\
+\
+      .service-highlight-image \{\
+        margin: 0 auto 20px;\
+      \}\
+      \
+      .services-grid \{\
+        grid-template-columns: repeat(2, 1fr);\
+        gap: 15px;\
+      \}\
+      \
+      .service-card \{\
+        flex-direction: column;\
+        text-align: center;\
+        padding: 20px 15px;\
+      \}\
+      \
+      .service-card-image \{\
+        margin: 0 auto 15px;\
+      \}\
+      \
+      .service-card-content h3 \{\
+        font-size: 1rem;\
+        margin-bottom: 10px;\
+      \}\
+      \
+      .service-card-content p \{\
+        font-size: 0.9rem;\
+        line-height: 1.5;\
+      \}\
+      \
+      .pricing-cards \{\
+        flex-direction: column;\
+        align-items: center;\
+      \}\
+      \
+      .pricing-card \{\
+        width: 100%;\
+      \}\
+      \
+      .message-box \{\
+        padding: 30px;\
+      \}\
+      \
+      .message-box p \{\
+        font-size: var(--font-size-base);\
+        line-height: 1.6;\
+      \}\
+    \}\
+    \
+    @media (max-width: 480px) \{\
+      :root \{\
+        --font-size-base: 0.9rem;\
+        --container-padding: 12px;\
+      \}\
+      \
+      .main-visual-logo \{\
+        width: 180px;\
+        height: 180px;\
+        font-size: 1.6rem;\
+      \}\
+      \
+      .service-highlight \{\
+        padding: 25px;\
+      \}\
+      \
+      .service-card \{\
+        padding: 15px 12px;\
+      \}\
+      \
+      .service-card-content p \{\
+        font-size: 0.85rem;\
+      \}\
+      \
+      /* \uc0\u12464 \u12522 \u12483 \u12489 \u12398 \u35519 \u25972  */\
+      .services-grid \{\
+        gap: 10px;\
+      \}\
+      \
+      /* \uc0\u20313 \u20998 \u12394 \u20313 \u30333 \u12398 \u21066 \u38500  */\
+      body, html \{\
+        overflow-x: hidden !important;\
+      \}\
+      \
+      /* \uc0\u12473 \u12510 \u12507 \u12391 \u12398 \u27178 \u12473 \u12463 \u12525 \u12540 \u12523 \u38450 \u27490 \u12398 \u12383 \u12417 \u12398 \u36861 \u21152 \u23550 \u31574  */\
+      .container \{\
+        padding-left: 10px;\
+        padding-right: 10px;\
+        width: 100%;\
+        max-width: 100%;\
+      \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <!-- 1. \uc0\u12504 \u12483 \u12480 \u12540  -->\
+  <header>\
+    <div class="container">\
+      <div class="header-inner">\
+        <img src="/api/placeholder/180/36" alt="\uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 " class="logo" />\
+      </div>\
+    </div>\
+  </header>\
+\
+  <!-- 2. \uc0\u12513 \u12452 \u12531 \u12499 \u12472 \u12517 \u12450 \u12523  -->\
+  <section class="main-visual">\
+    <div class="container">\
+      <div class="main-visual-content">\
+        <div class="main-visual-logo">JIMO PORT HYOGO</div>\
+        <h1>\uc0\u22320 \u22495 \u12392 \u12388 \u12394 \u12364 \u12427 <br>\u20250 \u21729 \u21046 \u12467 \u12511 \u12517 \u12491 \u12486 \u12451 </h1>\
+        <p>\uc0\u22823 \u20154 \u12395 \u12394 \u12387 \u12390 \u12289 "\u26032 \u12375 \u12356 \u21451 \u36948 \u12364 \u12391 \u12365 \u12427 "\u12387 \u12390 \u12356 \u12356 \u12394 \u12290 <br class="sp-only">\u35504 \u12363 \u12392 \u36259 \u21619 \u12398 \u35441 \u12364 \u12375 \u12383 \u12356 \u12290 <br class="sp-only">\u35504 \u12363 \u12392 \u19968 \u32210 \u12395 \u20986 \u12363 \u12369 \u12383 \u12356 \u12290 <br>\
+        \uc0\u12381 \u12435 \u12394 "\u12365 \u12387 \u12363 \u12369 "\u12364 \u22679 \u12360 \u12427 \u22580 \u25152  \u9472 \u9472  <br class="sp-only">\u12381 \u12428 \u12364 \u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12391 \u12377 \u12290 </p>\
+        <a href="https://lin.ee/rM7ZIL9" class="cta-button">LINE\uc0\u12395 \u30331 \u37682 \u12377 \u12427 </a>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- 3. \uc0\u12467 \u12531 \u12475 \u12503 \u12488  -->\
+  <section class="concept">\
+    <div class="container">\
+      <h2>\uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12392 \u12399 \u65311 </h2>\
+      <div class="section-intro">\
+        <p>\uc0\u20853 \u24235 \u12391 \u12300 \u23478 \u12391 \u12418 \u12394 \u12356 \u12289 \u32887 \u22580 \u12391 \u12418 \u12394 \u12356 \u12289 <br class="sp-only">\u12391 \u12418 \u23433 \u24515 \u12391 \u12365 \u12427 \u22580 \u25152 \u12301 \u12434 <br class="sp-only">\u19968 \u32210 \u12395 \u12388 \u12367 \u12427 \u12467 \u12511 \u12517 \u12491 \u12486 \u12451 \u12391 \u12377 \u12290 </p>\
+        <p>\uc0\u36259 \u21619 \u12398 \u20210 \u38291 \u12392 \u20986 \u20250 \u12387 \u12383 \u12426 \u12289 <br class="sp-only">\u19968 \u32210 \u12395 \u12362 \u24215 \u12395 \u34892 \u12387 \u12383 \u12426 \u12289 <br class="sp-only">\u12422 \u12427 \u12420 \u12363 \u12394 \u12388 \u12394 \u12364 \u12426 \u12434 \u32946 \u12415 \u12414 \u12377 \u12290 </p>\
+        <p>\uc0\u22320 \u22495 \u12392 \u12300 \u38306 \u12431 \u12387 \u12390 \u12415 \u12383 \u12356 \u12301 \u12354 \u12394 \u12383 \u12398 \u32972 \u20013 \u12434 \u12289 <br class="sp-only">\u12381 \u12387 \u12392 \u25276 \u12377 \u23384 \u22312 \u12391 \u12354 \u12426 \u12383 \u12356 \u12392 \u24605 \u12387 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- 4. \uc0\u12479 \u12540 \u12466 \u12483 \u12488  -->\
+  <section class="target">\
+    <div class="container">\
+      <h2>\uc0\u12371 \u12435 \u12394 \u20154 \u12395 \u12289 \u30693 \u12387 \u12390 \u12411 \u12375 \u12356 \u12290 </h2>\
+      <div class="target-grid">\
+        <div class="target-card">\
+          <div class="target-card-image friends"></div>\
+          <h3>\uc0\u27671 \u36605 \u12395 \u12372 \u39151 \u12395 \u35480 \u12360 \u12427 \u21451 \u36948 \u12364 \u12411 \u12375 \u12356 \u20154 </h3>\
+          <p>\uc0\u32887 \u22580 \u12392 \u23478 \u12434 \u24448 \u24489 \u12377 \u12427 \u12384 \u12369 \u12398 \u27598 \u26085 \u12290 \u12383 \u12414 \u12395 \u12399 \u35504 \u12363 \u12392 \u39154 \u12415 \u12395 \u34892 \u12365 \u12383 \u12356 \u12369 \u12428 \u12393 \u12289 \u27671 \u12434 \u36963 \u12358 \u38306 \u20418 \u12399 \u30130 \u12428 \u12427 \u12290 \u12472 \u12514 \u12509 \u12540 \u12488 \u12391 \u12399 \u12289 \u12422 \u12427 \u12367 \u12388 \u12394 \u12364 \u12428 \u12427 \u30456 \u25163 \u12364 \u35211 \u12388 \u12363 \u12427 \u12363 \u12418 \u12375 \u12428 \u12414 \u12379 \u12435 \u12290 </p>\
+        </div>\
+        <div class="target-card">\
+          <div class="target-card-image hobby"></div>\
+          <h3>\uc0\u36259 \u21619 \u12398 \u35441 \u12364 \u12391 \u12365 \u12427 \u20210 \u38291 \u12392 \u20986 \u20250 \u12356 \u12383 \u12356 \u20154 </h3>\
+          <p>\uc0\u12459 \u12501 \u12455 \u24033 \u12426 \u12289 \u20889 \u30495 \u12289 \u26144 \u30011 \u12289 \u28201 \u27849 \'85\u12300 \u22909 \u12365 \u12301 \u12364 \u21512 \u12358 \u20154 \u12392 \u35441 \u12377 \u12392 \u12289 \u12381 \u12428 \u12384 \u12369 \u12391 \u12385 \u12423 \u12387 \u12392 \u23305 \u12375 \u12367 \u12394 \u12427 \u12290 \u20849 \u36890 \u12398 "\u22909 \u12365 "\u12391 \u12388 \u12394 \u12364 \u12427 \u37096 \u27963 \u21205 \u12420 \u12481 \u12515 \u12483 \u12488 \u12364 \u12354 \u12426 \u12414 \u12377 \u12290 </p>\
+        </div>\
+        <div class="target-card">\
+          <div class="target-card-image local"></div>\
+          <h3>\uc0\u22320 \u22495 \u12395 \u38306 \u12431 \u12387 \u12390 \u12415 \u12383 \u12356 \u12392 \u24605 \u12387 \u12390 \u12356 \u12427 \u20154 </h3>\
+          <p>\uc0\u12362 \u24215 \u12398 \u12371 \u12392 \u12289 \u12452 \u12505 \u12531 \u12488 \u12398 \u12371 \u12392 \u12289 \u20154 \u12398 \u12371 \u12392 \u12290 \u20170 \u12414 \u12391 \u36890 \u12426 \u36942 \u12366 \u12390 \u12356 \u12383 \u22580 \u25152 \u12418 \u12289 \u35504 \u12363 \u12392 \u38306 \u12431 \u12427 \u12384 \u12369 \u12391 \u26223 \u33394 \u12364 \u22793 \u12431 \u12427 \u12290 \u22320 \u22495 \u12398 \u39749 \u21147 \u12434 \u12289 \u35211 \u12427 \u20596 \u12363 \u12425 "\u20253 \u12360 \u12427 \u20596 "\u12395 \u12394 \u12387 \u12390 \u12415 \u12414 \u12379 \u12435 \u12363 \u65311 </p>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- 5. \uc0\u12469 \u12540 \u12499 \u12473 \u19968 \u35239  -->\
+  <section class="services">\
+    <div class="container">\
+      <h2>\uc0\u12469 \u12540 \u12499 \u12473 \u19968 \u35239 </h2>\
+      \
+      <!-- \uc0\u12469 \u12540 \u12499 \u12473 \u19968 \u35239 \u65288 \u12458 \u12501 \u20250 \u12364 1\u12459 \u12521 \u12512 \u65289  -->\
+      <div class="service-highlight">\
+        <div class="service-highlight-image"></div>\
+        <div class="service-highlight-content">\
+          <h3>\uc0\u12458 \u12501 \u20250 </h3>\
+          <p>\uc0\u22320 \u22495 \u12398 \u20154 \u12392 \u33258 \u28982 \u12395 \u20986 \u20250 \u12360 \u12427 \u12289 \u12422 \u12427 \u12420 \u12363 \u12394 \u20132 \u27969 \u20250 \u12290 \u12521 \u12531 \u12481 \u12420 \u39154 \u12415 \u20250 \u12289 \u12414 \u12385 \u27497 \u12365 \u12394 \u12393 \u12289 \u21021 \u12417 \u12390 \u12391 \u12418 \u21442 \u21152 \u12375 \u12420 \u12377 \u12356 \u38640 \u22258 \u27671 \u12391 \u12377 \u12290 </p>\
+        </div>\
+      </div>\
+      \
+      <!-- \uc0\u12381 \u12398 \u20182 \u12469 \u12540 \u12499 \u12473  (2\u12459 \u12521 \u12512 ) -->\
+      <div class="services-grid">\
+        <!-- 1\uc0\u34892 \u30446  -->\
+        <div class="service-card">\
+          <div class="service-card-image club"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u37096 \u27963 \u21205 </h3>\
+            <p>\uc0\u12459 \u12501 \u12455 \u12539 \u12459 \u12513 \u12521 \u12539 \u28201 \u27849 \u12394 \u12393 \u12289 \u36259 \u21619 \u12391 \u12388 \u12394 \u12364 \u12427 \u27963 \u21205 \u12290 \u23554 \u29992 \u12481 \u12515 \u12483 \u12488 \u12420 \u23450 \u26399 \u30340 \u12394 \u12458 \u12501 \u12521 \u12452 \u12531 \u27963 \u21205 \u12391 \u20210 \u38291 \u12392 \u12398 \u20132 \u27969 \u12364 \u28145 \u12414 \u12426 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <div class="service-card">\
+          <div class="service-card-image pass"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12497 \u12473 </h3>\
+            <p>\uc0\u25552 \u25658 \u24215 \u33303 \u12391 \u12489 \u12522 \u12531 \u12463 \u29305 \u20856 \u12420 \u21106 \u24341 \u12434 \u21463 \u12369 \u12425 \u12428 \u12427 \u20250 \u21729 \u38480 \u23450 \u12497 \u12473 \u12290 \u12414 \u12385 \u27497 \u12365 \u12364 \u12424 \u12426 \u27005 \u12375 \u12367 \u12394 \u12427 \u29305 \u20856 \u12364 \u12356 \u12387 \u12401 \u12356 \u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <!-- 2\uc0\u34892 \u30446  -->\
+        <div class="service-card">\
+          <div class="service-card-image report"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12524 \u12509 </h3>\
+            <p>\uc0\u22320 \u20803 \u12398 \u12362 \u24215 \u12420 \u20154 \u12434 \u32057 \u20171 \u12377 \u12427 \u21442 \u21152 \u22411 \u12524 \u12509 \u12540 \u12488 \u20225 \u30011 \u12290 SNS\u12420 Web\u12395 \u25522 \u36617 \u12373 \u12428 \u12289 \u22320 \u22495 \u12398 \u39749 \u21147 \u12434 \u20253 \u12360 \u12427 \u19968 \u21729 \u12395 \u12394 \u12428 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <div class="service-card">\
+          <div class="service-card-image school"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12473 \u12463 </h3>\
+            <p>Instagram\uc0\u12420 \u12459 \u12513 \u12521 \u12394 \u12393 \u12398 \u12473 \u12461 \u12523 \u12450 \u12483 \u12503 \u35611 \u24231 \u12290 \u22320 \u22495 \u30330 \u20449 \u12395 \u24441 \u31435 \u12388 \u30693 \u35672 \u12434 \u12289 \u27005 \u12375 \u12367 \u23398 \u12409 \u12427 \u12511 \u12491 \u35611 \u24231 \u12471 \u12522 \u12540 \u12474 \u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <!-- 3\uc0\u34892 \u30446  -->\
+        <div class="service-card">\
+          <div class="service-card-image news"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12491 \u12517 \u12540 \u12473 </h3>\
+            <p>\uc0\u26032 \u24215 \u12458 \u12540 \u12503 \u12531 \u12420 \u12452 \u12505 \u12531 \u12488 \u12394 \u12393 \u12289 \u22320 \u20803 \u12398 \u35441 \u38988 \u12434 \u37197 \u20449 \u12290 \u20250 \u21729 \u38480 \u23450 \u12398 \u24773 \u22577 \u12418 \u21547 \u12416 \u12289 \u12522 \u12450 \u12523 \u12394 \u12525 \u12540 \u12459 \u12523 \u12491 \u12517 \u12540 \u12473 \u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <div class="service-card">\
+          <div class="service-card-image board"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12508 \u12540 \u12489 </h3>\
+            <p>\uc0\u20250 \u21729 \u23554 \u29992 \u12398 \u25522 \u31034 \u26495 \u12290 \u27671 \u12395 \u12394 \u12427 \u12362 \u24215 \u12398 \u30456 \u35527 \u12420 \u12289 \u22320 \u22495 \u24773 \u22577 \u12398 \u20132 \u25563 \u12394 \u12393 \u12289 \u27671 \u36605 \u12395 \u36074 \u21839 \u12420 \u24773 \u22577 \u20132 \u25563 \u12364 \u12391 \u12365 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <!-- 4\uc0\u34892 \u30446  -->\
+        <div class="service-card">\
+          <div class="service-card-image job"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12472 \u12519 \u12502 </h3>\
+            <p>\uc0\u22320 \u22495 \u12395 \u38306 \u12431 \u12427 \u20181 \u20107 \u12420 \u21103 \u26989 \u12398 \u24773 \u22577 \u20849 \u26377 \u12290 \u12362 \u24215 \u12398 \u12362 \u25163 \u20253 \u12356 \u12394 \u12393 \u12289 \u12385 \u12423 \u12387 \u12392 \u12375 \u12383 \u38306 \u12431 \u12426 \u12363 \u12425 \u12399 \u12376 \u12417 \u12427 \u22320 \u22495 \u36002 \u29486 \u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <div class="service-card">\
+          <div class="service-card-image love"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u24651 </h3>\
+            <p>\uc0\u21516 \u12376 \u22320 \u22495 \u12434 \u22909 \u12365 \u12394 \u20154 \u12392 \u20986 \u20250 \u12360 \u12427 \u20132 \u27969 \u20250 \u12290 \u20849 \u36890 \u12398 \u35441 \u38988 \u12391 \u33258 \u28982 \u12394 \u20986 \u20250 \u12356 \u12364 \u29983 \u12414 \u12428 \u12427 \u12289 \u23130 \u27963 \u12391 \u12399 \u12394 \u12356 \u32233 \u12420 \u12363 \u12394 \u22580 \u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <!-- 5\uc0\u34892 \u30446  -->\
+        <div class="service-card">\
+          <div class="service-card-image shop"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12471 \u12519 \u12483 \u12503 </h3>\
+            <p>\uc0\u20250 \u21729 \u38480 \u23450 \u12398 \u12464 \u12483 \u12474 \u12420 \u22320 \u22495 \u12467 \u12521 \u12508 \u21830 \u21697 \u12290 \u12458 \u12522 \u12472 \u12490 \u12523 \u12398 \u12488 \u12540 \u12488 \u12496 \u12483 \u12464 \u12420 \u22320 \u20803 \u20316 \u23478 \u12392 \u12398 \u12467 \u12521 \u12508 \u12450 \u12452 \u12486 \u12512 \u12434 \u23637 \u38283 \u12375 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        \
+        <div class="service-card">\
+          <div class="service-card-image travel"></div>\
+          <div class="service-card-content">\
+            <h3>\uc0\u12472 \u12514 \u12479 \u12499 </h3>\
+            <p>\uc0\u36817 \u38563 \u12456 \u12522 \u12450 \u12408 \u12398 \u23567 \u26053 \u34892 \u20225 \u30011 \u12290 \u26085 \u24112 \u12426 \u12363 \u12425 \u19968 \u27850 \u12414 \u12391 \u12289 \u20250 \u21729 \u21516 \u22763 \u12391 \u27005 \u12375 \u12416 \u12511 \u12491 \u26053 \u34892 \u12391 \u26032 \u12375 \u12356 \u22320 \u22495 \u12392 \u12398 \u20986 \u20250 \u12356 \u12434 \u20316 \u12426 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+\
+<!-- 6. \uc0\u20250 \u36027 \u12503 \u12521 \u12531  -->\
+  <section class="pricing">\
+    <div class="container">\
+      <h2>\uc0\u20250 \u36027 \u12503 \u12521 \u12531 </h2>\
+      <div class="section-intro">\
+        <p>\uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12399 \u12289 \u26377 \u26009 \u12398 \u20250 \u21729 \u21046 \u12467 \u12511 \u12517 \u12491 \u12486 \u12451 \u12391 \u12377 \u12290 \u22320 \u22495 \u12392 \u12388 \u12394 \u12364 \u12427 \u12365 \u12387 \u12363 \u12369 \u12434 \u22679 \u12420 \u12375 \u12394 \u12364 \u12425 \u12289 \u36939 \u21942 \u12398 \u32153 \u32154 \u24615 \u12392 \u20385 \u20516 \u12398 \u36996 \u20803 \u12434 \u22823 \u20999 \u12395 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 </p>\
+      </div>\
+      <div class="pricing-cards">\
+        <div class="pricing-card">\
+          <h3>\uc0\u55357 \u56499  \u26376 \u38989 \u12503 \u12521 \u12531 </h3>\
+          <div class="price">\'a5980</div>\
+          <p class="price-note">\uc0\u31246 \u36796 \u12539 \u26376 \u38989 </p>\
+          <p>\uc0\u12414 \u12378 \u12399 \u27671 \u36605 \u12395 \u35430 \u12375 \u12383 \u12356 \u26041 \u12395 \u12362 \u12377 \u12377 \u12417 \u12290 <br class="sp-only">1\u12534 \u26376 \u12372 \u12392 \u12398 \u33258 \u21205 \u26356 \u26032 \u12391 \u12377 \u12290 </p>\
+        </div>\
+        <div class="pricing-card">\
+          <h3>\uc0\u55357 \u56496  \u24180 \u38291 \u12503 \u12521 \u12531 \u65288 \u19968 \u25324 \u65289 </h3>\
+          <div class="price">\'a59,800</div>\
+          <p class="price-note">\uc0\u31246 \u36796 \u12539 \u24180 \u38989 </p>\
+          <p>1\uc0\u24180 \u12434 \u36890 \u12375 \u12390 \u12376 \u12387 \u12367 \u12426 \u27005 \u12375 \u12415 \u12383 \u12356 \u26041 \u12395 \u12290 <br class="sp-only">\u23455 \u36074 2\u12534 \u26376 \u20998 \u28961 \u26009 \u12398 \u21106 \u24341 \u12503 \u12521 \u12531 \u12391 \u12377 \u12290 </p>\
+        </div>\
+      </div>\
+      \
+      <!-- \uc0\u21442 \u21152 \u12473 \u12486 \u12483 \u12503  -->\
+      <div class="steps-container">\
+        <h3 class="steps-heading">\uc0\u21442 \u21152 \u12377 \u12427 \u25163 \u38918 </h3>\
+        <div class="steps">\
+          <div class="step">\
+            <div class="step-number">1</div>\
+            <div class="step-content">\
+              <h3>\uc0\u20844 \u24335 LINE\u12395 \u30331 \u37682 </h3>\
+              <p>\uc0\u19979 \u37096 \u12398 \u12508 \u12479 \u12531 \u12363 \u12425 \u12289 \u20844 \u24335 LINE\u12450 \u12459 \u12454 \u12531 \u12488 \u12395 \u21451 \u36948 \u30331 \u37682 \u12434 \u12375 \u12414 \u12377 \u12290 </p>\
+            </div>\
+          </div>\
+          <div class="step">\
+            <div class="step-number">2</div>\
+            <div class="step-content">\
+              <h3>\uc0\u30003 \u36796 \u12501 \u12457 \u12540 \u12512 \u12398 \u20837 \u21147 </h3>\
+              <p>LINE\uc0\u12391 \u23626 \u12367 \u30003 \u36796 \u12501 \u12457 \u12540 \u12512 \u12395 \u12289 \u31777 \u21336 \u12394 \u33258 \u24049 \u32057 \u20171 \u12392 \u24076 \u26395 \u12503 \u12521 \u12531 \u12434 \u20837 \u21147 \u12375 \u12414 \u12377 \u12290 </p>\
+            </div>\
+          </div>\
+          <div class="step">\
+            <div class="step-number">3</div>\
+            <div class="step-content">\
+              <h3>\uc0\u12362 \u25903 \u25173 \u12356 </h3>\
+              <p>\uc0\u27770 \u28168 \u12501 \u12457 \u12540 \u12512 \u12363 \u12425 \u20250 \u36027 \u12398 \u12362 \u25903 \u25173 \u12356 \u12434 \u12362 \u39000 \u12356 \u12375 \u12414 \u12377 \u12290 \u12463 \u12524 \u12472 \u12483 \u12488 \u12459 \u12540 \u12489 \u27770 \u28168 \u12364 \u21487 \u33021 \u12391 \u12377 \u12290 </p>\
+            </div>\
+          </div>\
+          <div class="step">\
+            <div class="step-number">4</div>\
+            <div class="step-content">\
+              <h3>\uc0\u20250 \u21729 \u23554 \u29992 \u12464 \u12523 \u12540 \u12503 \u12395 \u25307 \u24453 </h3>\
+              <p>\uc0\u12362 \u25903 \u25173 \u12356 \u30906 \u35469 \u24460 \u12289 \u20250 \u21729 \u23554 \u29992 \u12398 LINE\u12458 \u12540 \u12503 \u12531 \u12481 \u12515 \u12483 \u12488 \u12395 \u25307 \u24453 \u12373 \u12428 \u12414 \u12377 \u12290 \u12371 \u12428 \u12391 \u20837 \u20250 \u23436 \u20102 \u12391 \u12377 \u65281 </p>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- 7. FAQ -->\
+  <section class="faq">\
+    <div class="container">\
+      <h2>\uc0\u12424 \u12367 \u12354 \u12427 \u36074 \u21839 \u65288 FAQ\u65289 </h2>\
+      <div class="faq-list">\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u22320 \u26041 \u22312 \u20303 \u12391 \u12418 \u21442 \u21152 \u12391 \u12365 \u12414 \u12377 \u12363 \u65311 </div>\
+          <div class="faq-answer">\
+            <p>A. \uc0\u12399 \u12356 \u12289 \u12393 \u12371 \u12395 \u20303 \u12435 \u12391 \u12356 \u12390 \u12418 \u21442 \u21152 \u12391 \u12365 \u12414 \u12377 \u12290 \u20853 \u24235 \u30476 \u22806 \u12391 \u12418 \u12300 \u22320 \u22495 \u12395 \u38306 \u12431 \u12426 \u12383 \u12356 \u12301 \u12300 \u20853 \u24235 \u12364 \u22909 \u12365 \u12301 \u12392 \u12356 \u12358 \u27671 \u25345 \u12385 \u12364 \u12354 \u12428 \u12400 \u12289 \u12393 \u12394 \u12383 \u12391 \u12418 \u27475 \u36814 \u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u21021 \u23550 \u38754 \u12398 \u20154 \u12392 \u35441 \u12377 \u12398 \u12364 \u33510 \u25163 \u12394 \u12398 \u12391 \u12377 \u12364 \u12289 \u22823 \u19976 \u22827 \u12391 \u12375 \u12423 \u12358 \u12363 \u65311 </div>\
+          <div class="faq-answer">\
+            <p>A. \uc0\u12399 \u12356 \u12289 \u28961 \u29702 \u12398 \u12394 \u12356 \u12506 \u12540 \u12473 \u12391 \u21442 \u21152 \u12356 \u12383 \u12384 \u12369 \u12414 \u12377 \u12290 \u12300 \u35211 \u12427 \u12384 \u12369 \u12301 \u12300 \u35501 \u12416 \u12384 \u12369 \u12301 \u12391 \u12418 OK\u12290 \u21021 \u21442 \u21152 \u12398 \u26041 \u12395 \u12399 \u12473 \u12479 \u12483 \u12501 \u12364 \u12501 \u12457 \u12525 \u12540 \u12418 \u34892 \u12356 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u25237 \u31295 \u12420 \u30330 \u20449 \u12434 \u12375 \u12394 \u12356 \u12392 \u12356 \u12369 \u12414 \u12379 \u12435 \u12363 \u65311 </div>\
+          <div class="faq-answer">\
+            <p>A. \uc0\u12356 \u12356 \u12360 \u12289 \u30330 \u20449 \u12399 \u24517 \u38920 \u12391 \u12399 \u12354 \u12426 \u12414 \u12379 \u12435 \u12290 \u27671 \u12364 \u21521 \u12356 \u12383 \u12392 \u12365 \u12384 \u12369 \u12398 \u21442 \u21152 \u12418 \u27475 \u36814 \u12391 \u12377 \u12290 \u33258 \u20998 \u12398 \u12506 \u12540 \u12473 \u12391 \u38306 \u12431 \u12387 \u12390 \u12356 \u12383 \u12384 \u12369 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u24537 \u12375 \u12367 \u12390 \u12354 \u12414 \u12426 \u21442 \u21152 \u12391 \u12365 \u12394 \u12356 \u12363 \u12418 \u12375 \u12428 \u12414 \u12379 \u12435 \'85</div>\
+          <div class="faq-answer">\
+            <p>A. \uc0\u22823 \u19976 \u22827 \u12391 \u12377 \u12290 \u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12399 \u12300 \u12422 \u12427 \u12367 \u38306 \u12431 \u12428 \u12427 \u12371 \u12392 \u12301 \u12434 \u22823 \u20999 \u12395 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 \u27671 \u12364 \u21521 \u12356 \u12383 \u12392 \u12365 \u12384 \u12369 \u21442 \u21152 \u12356 \u12383 \u12384 \u12369 \u12428 \u12400 OK\u12391 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u24180 \u40802 \u23652 \u12420 \u32887 \u26989 \u12395 \u20559 \u12426 \u12399 \u12354 \u12426 \u12414 \u12377 \u12363 \u65311 </div>\
+          <div class="faq-answer">\
+            <p>A. 20\uc0\u12316 40\u20195 \u12434 \u20013 \u24515 \u12395 \u12289 \u20250 \u31038 \u21729 \u12289 \u12501 \u12522 \u12540 \u12521 \u12531 \u12473 \u12289 \u23398 \u29983 \u12289 \u20027 \u23142 \u12394 \u12393 \u12289 \u12373 \u12414 \u12374 \u12414 \u12394 \u26041 \u12364 \u21442 \u21152 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 \u12393 \u12435 \u12394 \u26041 \u12391 \u12418 \u23433 \u24515 \u12375 \u12390 \u12372 \u21442 \u21152 \u12356 \u12383 \u12384 \u12369 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u36864 \u20250 \u12399 \u12356 \u12388 \u12391 \u12418 \u12391 \u12365 \u12414 \u12377 \u12363 \u65311 </div>\
+          <div class="faq-answer">\
+            <p>A. \uc0\u12399 \u12356 \u12290 \u26356 \u26032 \u26085 \u21069 \u12391 \u12354 \u12428 \u12400 \u12356 \u12388 \u12391 \u12418 \u36864 \u20250 \u21487 \u33021 \u12391 \u12377 \u12290 LINE\u12363 \u12425 \u12398 \u12372 \u36899 \u32097 \u12391 \u31777 \u21336 \u12395 \u25163 \u32154 \u12365 \u12391 \u12365 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+        <div class="faq-item">\
+          <div class="faq-question">Q. \uc0\u12393 \u12358 \u12420 \u12387 \u12390 \u21442 \u21152 \u12377 \u12428 \u12400 \u12356 \u12356 \u12391 \u12377 \u12363 \u65311 </div>\
+          <div class="faq-answer">\
+            <p>A. \uc0\u12414 \u12378 \u12399 \u20844 \u24335 LINE\u12395 \u30331 \u37682 \u12375 \u12390 \u12367 \u12384 \u12373 \u12356 \u12290 \u30331 \u37682 \u24460 \u12289 \u30003 \u36796 \u12501 \u12457 \u12540 \u12512 \u12539 \u27770 \u28168 \u26696 \u20869 \u12364 \u23626 \u12365 \u12414 \u12377 \u12290 \u23436 \u20102 \u24460 \u12395 \u12372 \u21442 \u21152 \u12356 \u12383 \u12384 \u12369 \u12414 \u12377 \u12290 </p>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- 8. \uc0\u12513 \u12483 \u12475 \u12540 \u12472  -->\
+  <section class="message">\
+    <div class="container">\
+      <h2>\uc0\u12394 \u12380 \u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12434 \u31435 \u12385 \u19978 \u12370 \u12383 \u12398 \u12363 \u65311 </h2>\
+      <div class="message-container">\
+        <div class="message-box">\
+          <p>\uc0\u12399 \u12376 \u12417 \u12414 \u12375 \u12390 \u12290 \u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12398 \u36939 \u21942 \u12434 \u12375 \u12390 \u12356 \u12427 \u12289 <br class="sp-only"><strong>\u65408 \u65435 \u65392 \u65372 \u12362 \u12391 \u12363 \u12369 \u20853 \u24235 </strong>\u12391 \u12377 \u12290 </p>\
+          <p>Instagram\uc0\u12391 \u12300 \u12362 \u12391 \u12363 \u12369 \u20853 \u24235 \u12301 \u12434 \u22987 \u12417 \u12390 \u12363 \u12425 \u12289 <br class="sp-only">\u20853 \u24235 \u30476 \u20869 \u12398 \u12356 \u12429 \u12435 \u12394 \u22580 \u25152 \u12434 \u12417 \u12368 \u12426 \u12289 <br class="sp-only">\u12383 \u12367 \u12373 \u12435 \u12398 \u32032 \u25973 \u12394 \u12362 \u24215 \u12420 \u20154 \u12392 \u20986 \u20250 \u12387 \u12390 \u12365 \u12414 \u12375 \u12383 \u12290 </p>\
+          <p>\uc0\u12369 \u12428 \u12393 \u12289 \u12393 \u12428 \u12384 \u12369 \u24773 \u22577 \u12434 \u30330 \u20449 \u12375 \u12390 \u12418 \u12289 <br class="sp-only">\u12300 \u35211 \u12427 \u12384 \u12369 \u12301 \u12391 \u32066 \u12431 \u12387 \u12390 \u12375 \u12414 \u12358 \u12371 \u12392 \u12398 \u22810 \u12373 \u12395 \u12289 <br class="sp-only">\u23569 \u12375 \u12418 \u12393 \u12363 \u12375 \u12373 \u12434 \u24863 \u12376 \u12390 \u12356 \u12414 \u12375 \u12383 \u12290 </p>\
+          <p>\uc0\u12300 \u24540 \u25588 \u12375 \u12383 \u12356 \u12301 \u12300 \u34892 \u12387 \u12390 \u12415 \u12383 \u12356 \u12301 \u12392 \u24605 \u12387 \u12383 \u12392 \u12365 \u12395 \u12289 <br class="sp-only">\u35504 \u12391 \u12418 \u19968 \u27497 \u36367 \u12415 \u20986 \u12379 \u12427 \u22580 \u25152 \u12364 \u12354 \u12428 \u12400 \u12356 \u12356 \u12398 \u12395 \u12290 <br class="sp-only">\u12381 \u12358 \u24605 \u12387 \u12390 \u31435 \u12385 \u19978 \u12370 \u12383 \u12398 \u12364 \u12289 \u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 \u12391 \u12377 \u12290 </p>\
+          <p>SNS\uc0\u12384 \u12369 \u12391 \u12399 \u12388 \u12394 \u12364 \u12426 \u12365 \u12428 \u12394 \u12356 \u12289 <br class="sp-only">\u12522 \u12450 \u12523 \u12394 "\u20154 \u12392 \u20154 "\u12398 \u12388 \u12394 \u12364 \u12426 \u12434 \u12289 \u22320 \u22495 \u12398 \u20013 \u12395 \u22679 \u12420 \u12375 \u12383 \u12356 \u12290 <br class="sp-only">\u12472 \u12514 \u12509 \u12399 \u12289 \u12381 \u12435 \u12394 \u24819 \u12356 \u12363 \u12425 \u29983 \u12414 \u12428 \u12383 \u12300 \u38306 \u12431 \u12426 \u12398 \u20837 \u12426 \u21475 \u12301 \u12391 \u12377 \u12290 </p>\
+          <p>\uc0\u12354 \u12394 \u12383 \u12395 \u12392 \u12387 \u12390 \u12289 \u22320 \u20803 \u12364 \u12385 \u12423 \u12387 \u12392 \u27005 \u12375 \u12415 \u12395 \u12394 \u12427 \u22580 \u25152 \u12395 \u12394 \u12428 \u12383 \u12425 \u23305 \u12375 \u12356 \u12391 \u12377 \u12290 <br class="sp-only">\u12405 \u12425 \u12387 \u12392 \u12289 \u27671 \u36605 \u12395 \u12289 \u36938 \u12403 \u12395 \u12365 \u12390 \u12367 \u12384 \u12373 \u12356 \u12290 </p>\
+          <div class="message-signature">\
+            \uc0\u12362 \u20250 \u12356 \u12391 \u12365 \u12427 \u12398 \u12434 \u27005 \u12375 \u12415 \u12395 \u12375 \u12390 \u12356 \u12414 \u12377 \u12290 <br>\'97\'97 \u65408 \u65435 \u65392 \u65288 \u12362 \u12391 \u12363 \u12369 \u20853 \u24235 \u65289 \
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+  </section>\
+\
+  <!-- 9. CTA -->\
+  <section class="cta">\
+    <div class="container">\
+      <h2>\uc0\u21442 \u21152 \u30003 \u36796 \u12399 \u12371 \u12385 \u12425 </h2>\
+      <p>\uc0\u55357 \u56517  <strong>\u27425 \u22238 \u21215 \u38598 \u26399 \u38291 \u65306 2025\u24180 5\u26376 20\u26085 \u12316 31\u26085 </strong></p>\
+      <p>\uc0\u30331 \u37682 \u12384 \u12369 \u12391 \u12418 OK\u12391 \u12377 \u12290 <br class="sp-only">\u23569 \u12375 \u12391 \u12418 \u12300 \u38754 \u30333 \u12381 \u12358 \u12301 \u12392 \u24863 \u12376 \u12383 \u12425 \u12289 <br class="sp-only">\u12414 \u12378 \u12399 LINE\u12363 \u12425 \u35223 \u12356 \u12390 \u12415 \u12390 \u12367 \u12384 \u12373 \u12356 \u12290 </p>\
+      <a href="https://lin.ee/rM7ZIL9" class="cta-button">LINE\uc0\u12395 \u30331 \u37682 \u12377 \u12427 </a>\
+    </div>\
+  </section>\
+\
+  <!-- 10. \uc0\u12501 \u12483 \u12479 \u12540  -->\
+  <footer>\
+    <div class="container">\
+      <img src="/api/placeholder/120/30" alt="\uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235 " class="footer-logo" />\
+      <p class="copyright">\'a9 2025 \uc0\u12472 \u12514 \u12509 \u12540 \u12488 \u20853 \u24235  All Rights Reserved.</p>\
+    </div>\
+  </footer>\
+\
+  <script>\
+    // FAQ\uc0\u12398 \u12488 \u12464 \u12523 \u27231 \u33021 \
+    document.addEventListener('DOMContentLoaded', function() \{\
+      const faqQuestions = document.querySelectorAll('.faq-question');\
+      \
+      faqQuestions.forEach(question => \{\
+        question.addEventListener('click', () => \{\
+          const answer = question.nextElementSibling;\
+          const isOpen = answer.style.display === 'block';\
+          \
+          // \uc0\u38281 \u12376 \u12427 \
+          if (isOpen) \{\
+            answer.style.display = 'none';\
+            question.classList.remove('active');\
+          \} \
+          // \uc0\u38283 \u12367 \
+          else \{\
+            answer.style.display = 'block';\
+            question.classList.add('active');\
+          \}\
+        \});\
+      \});\
+    \});\
+  </script>\
+</body>\
+</html>\
+\
+<script>\
+    // FAQ\uc0\u12398 \u12450 \u12467 \u12540 \u12487 \u12451 \u12458 \u12531 \u21205 \u20316 \
+    document.addEventListener('DOMContentLoaded', function() \{\
+      // FAQ\uc0\u12398 \u12450 \u12467 \u12540 \u12487 \u12451 \u12458 \u12531 \
+      document.querySelectorAll('.faq-question').forEach(question => \{\
+        question.addEventListener('click', event => \{\
+          const answer = event.target.nextElementSibling;\
+          const isOpen = answer.style.display === 'block';\
+          \
+          // \uc0\u12377 \u12409 \u12390 \u12398 \u22238 \u31572 \u12434 \u38281 \u12376 \u12427 \
+          document.querySelectorAll('.faq-answer').forEach(item => \{\
+            item.style.display = 'none';\
+          \});\
+          \
+          // \uc0\u12377 \u12409 \u12390 \u12398 \u36074 \u21839 \u12398 +\u12395 \u25147 \u12377 \
+          document.querySelectorAll('.faq-question').forEach(q => \{\
+            q.style.fontWeight = '700';\
+            if (q.innerHTML.includes('\uc0\u8722 ')) \{\
+              q.innerHTML = q.innerHTML.replace('\uc0\u8722 ', '+');\
+            \}\
+          \});\
+          \
+          if (!isOpen) \{\
+            answer.style.display = 'block';\
+            event.target.style.fontWeight = '700';\
+            if (event.target.innerHTML.includes('+')) \{\
+              event.target.innerHTML = event.target.innerHTML.replace('+', '\uc0\u8722 ');\
+            \}\
+          \}\
+        \});\
+      \});\
+      \
+      // \uc0\u12473 \u12463 \u12525 \u12540 \u12523 \u26178 \u12398 \u12450 \u12491 \u12513 \u12540 \u12471 \u12519 \u12531 \
+      const observerOptions = \{\
+        root: null,\
+        rootMargin: '0px',\
+        threshold: 0.1\
+      \};\
+      \
+      const observer = new IntersectionObserver((entries, observer) => \{\
+        entries.forEach(entry => \{\
+          if (entry.isIntersecting) \{\
+            entry.target.classList.add('fade-in');\
+            observer.unobserve(entry.target);\
+          \}\
+        \});\
+      \}, observerOptions);\
+      \
+      document.querySelectorAll('.service-card, .step, .pricing-card').forEach(el => \{\
+        el.style.opacity = '0';\
+        el.style.transform = 'translateY(20px)';\
+        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';\
+        observer.observe(el);\
+      \});\
+      \
+      // \uc0\u12463 \u12521 \u12473 \u12364 \u36861 \u21152 \u12373 \u12428 \u12383 \u12392 \u12365 \u12398 \u12473 \u12479 \u12452 \u12523 \
+      document.head.insertAdjacentHTML('beforeend', `\
+        <style>\
+          .fade-in \{\
+            opacity: 1 !important;\
+            transform: translateY(0) !important;\
+          \}\
+        </style>\
+      `);\
+    \});\
+  </script>\
+</body>\
+</html>\
+\
+}
