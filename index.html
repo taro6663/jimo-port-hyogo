@@ -682,10 +682,10 @@
 
     /* レスポンシブ調整 */
     @media (max-width: 768px) {
-      :root {
-        --font-size-base: 0.95rem;
-        --line-height-base: 1.5;
-        --container-padding: 15px;
+    .main-visual p {
+      font-size: 1rem;
+     line-height: 1.6;
+     white-space: normal; /* pre-line だと2行を越える可能性があるので避けます */
       }
       
       .sp-only {
@@ -779,7 +779,26 @@
         font-size: var(--font-size-base);
         line-height: 1.6;
       }
-    }
+
+      .target h2 {
+        font-size: 1.5rem;
+        margin-bottom: 35px;
+        line-height: 1.4;
+        text-align: center;
+      }
+
+      .target-card h3 {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .target-card p {
+        font-size: 0.92rem;
+        line-height: 1.7;
+        text-align: left;
+      }
     
     @media (max-width: 480px) {
       :root {
@@ -884,7 +903,7 @@
         <p>大人になって、"新しい友達ができる"っていいな。<br>
           誰かと趣味の話がしたい。誰かと一緒に出かけたい。
         </p>
-        そんな"きっかけ"が増える場所 ── <br class="sp-only">それがジモポート兵庫です。</p>
+        <p>そんな"きっかけ"が増える場所 <br class="sp-only"> ── それがジモポート兵庫です。</p>
         <a href="https://lin.ee/rM7ZIL9" class="cta-button">LINEに登録する</a>
       </div>
     </div>
@@ -911,7 +930,7 @@
     <div class="container">
       <h2>ジモポート兵庫とは？</h2>
       <div class="section-intro">
-        <p>兵庫で「家でもない、職場でもない、<br class="sp-only">でも安心できる場所」を<br class="sp-only">一緒につくるコミュニティです。</p>
+        <p>地元で「家でもない、職場でもない、<br class="sp-only">でも安心できる場所」を<br class="sp-only">一緒につくるコミュニティです。</p>
         <p>趣味の仲間と出会ったり、<br class="sp-only">一緒にお店に行ったり、<br class="sp-only">ゆるやかなつながりを育みます。</p>
         <p>地域と「関わってみたい」あなたの背中を、<br class="sp-only">そっと押す存在でありたいと思っています。</p>
       </div>
