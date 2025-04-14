@@ -826,35 +826,36 @@
 
     /* ▼ジモパス加盟店スライドショー */
 .partner-logos {
-  background-color: var(--white);
-  padding: 20px 0;
-  overflow: hidden;
+  background: var(--white);
+  padding: 16px 0;
   border-top: 1px solid var(--medium-gray);
   border-bottom: 1px solid var(--medium-gray);
 }
 
-.logo-slider {
-  width: 100%;
-  overflow: hidden;
-  height: 60px;
-  position: relative;
-}
-
 .logo-track {
   display: flex;
-  width: max-content;
-  animation: scrollLeft 30s linear infinite;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 32px;
+  animation: auto-scroll 40s linear infinite;
+  padding: 10px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.logo-track::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .logo-track img {
   height: 40px;
-  margin: 0 24px;
-  object-fit: contain;
   flex-shrink: 0;
+  scroll-snap-align: start;
+  object-fit: contain;
   opacity: 0.9;
 }
 
-@keyframes scrollLeft {
+@keyframes auto-scroll {
   0% {
     transform: translateX(0);
   }
@@ -889,20 +890,17 @@
 
   <!-- 2.5 ジモパス加盟店スライドショー -->
 <section class="partner-logos">
-  <div class="logo-slider">
-    <div class="logo-track">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store01.png" alt="店舗Aロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store02.png" alt="店舗Bロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store03.png" alt="店舗Cロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store04.png" alt="店舗Dロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store05.png" alt="店舗Eロゴ">
-      <!-- ループ用にもう一周 -->
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store01.png" alt="店舗Aロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store02.png" alt="店舗Bロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store03.png" alt="店舗Cロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store04.png" alt="店舗Dロゴ">
-      <img src="https://illust-image.s3.jp-east-2.amazonaws.com/store05.png" alt="店舗Eロゴ">
-    </div>
+  <div class="logo-track scrollable">
+    <img src="store01.png" alt="店舗A">
+    <img src="store02.png" alt="店舗B">
+    <img src="store03.png" alt="店舗C">
+    <img src="store04.png" alt="店舗D">
+    <img src="store05.png" alt="店舗E">
+    <img src="store01.png" alt="店舗A (loop)">
+    <img src="store02.png" alt="店舗B (loop)">
+    <img src="store03.png" alt="店舗C (loop)">
+    <img src="store04.png" alt="店舗D (loop)">
+    <img src="store05.png" alt="店舗E (loop)">
   </div>
 </section>
 
