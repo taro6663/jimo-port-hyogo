@@ -7,7 +7,7 @@
   <title>ジモポート兵庫｜入会案内</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -97,7 +97,7 @@
       /* メインビジュアル */
       .main-visual {
         background-color: var(--white);
-        padding: 180px 0 100px;
+        padding: 60px 0 40px;
         text-align: center;
         min-height: 100vh;
         display: flex;
@@ -127,9 +127,9 @@
       }
 
       .main-visual-logo {
-        width: 220px;
+        width: 280px;
         height: auto;
-        margin: 0 auto 50px;
+        margin: 0 auto 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -146,9 +146,9 @@
       }
 
       .main-visual h1 {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
         font-weight: 700;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         color: var(--text);
         line-height: 1.3;
       }
@@ -156,7 +156,7 @@
       .main-visual p {
         font-size: 1.1rem;
         color: var(--text-light);
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         line-height: 1.9;
         overflow-wrap: break-word;
         word-break: keep-all;
@@ -205,6 +205,17 @@
         background-color: var(--white);
       }
 
+      .concept-image {
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .concept-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
       /* ターゲット */
       .target {
         background-color: var(--light-gray);
@@ -218,17 +229,29 @@
         margin: 0 auto;
       }
 
-      .target-card {
-        background-color: var(--white);
-        border-radius: 8px;
-        padding: 30px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-        opacity: 0;
-        animation: fadeInUp 0.8s ease forwards;
+      /* 画像表示のためのスタイル */
+      .target-card-image {
         width: 100%;
-        box-sizing: border-box;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        background: none; /* 背景を削除 */
+      }
+
+      /* アイコン画像のスタイル */
+      .target-card-image img {
+        width: 500px;
+        height: auto;
+        object-fit: contain;
+      }
+
+      /* スマホ対応：縮小表示 */
+      @media (max-width: 768px) {
+        .target-card-image img {
+          width: 180px;
+        }
       }
 
       .target-card:nth-child(1) {
@@ -255,41 +278,15 @@
       }
 
       .target-card-image {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         margin: 0 auto 20px;
-        background-color: var(--primary-bg);
         border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         overflow: hidden;
-      }
-
-      .target-card-image::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: 60%;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 0.7;
-      }
-
-      .target-card-image.friends::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z' /%3E%3C/svg%3E");
-      }
-
-      .target-card-image.hobby::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z' /%3E%3C/svg%3E");
-      }
-
-      .target-card-image.local::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15 10.5a3 3 0 11-6 0 3 3 0 016 0z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z' /%3E%3C/svg%3E");
       }
 
       /* サービス一覧 */
@@ -317,30 +314,19 @@
       }
 
       .service-highlight-image {
-        width: 150px;
-        height: 150px;
-        background-color: var(--primary-bg);
+        width: 200px;
+        height: 200px;
         border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         overflow: hidden;
         flex-shrink: 0;
+        background-color: var(--white); /* 任意の背景色 */
       }
 
       .service-highlight-image::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 0.8;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /%3E%3C/svg%3E");
+        content: none;
       }
 
       .services-grid {
@@ -372,8 +358,8 @@
       }
 
       .service-card-image {
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 120px;
         background-color: var(--white);
         border-radius: 8px;
         display: flex;
@@ -397,46 +383,6 @@
         opacity: 0.7;
       }
 
-      .service-card-image.club::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z' /%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.pass::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.report::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.school::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.news::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.board::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.job::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.love::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.shop::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z' /%3E%3C/svg%3E");
-      }
-
-      .service-card-image.travel::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C25F69' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z' /%3E%3C/svg%3E");
-      }
-
       .service-card-content {
         flex: 1;
         width: 100%;
@@ -446,7 +392,42 @@
         margin-bottom: 10px;
       }
 
+      .coming-soon-badge {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;  /* ここでサイズ調整（例：80px） */
+        opacity: 0.85;
+        z-index: 2;
+        pointer-events: none; /* 画像の上にマウスが乗っても影響しないように */
+      }
+
+      .service-card-image .coming-soon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px; /* サイズは必要に応じて調整 */
+        transform: translate(-50%, -50%);
+        opacity: 0.9;
+        pointer-events: none; /* hover時の干渉を防ぐ */
+      }
+
       /* 会費プラン */
+
+      .section-intro--plan {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        color: var(--text-light);
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .section-intro--plan p {
+        margin-bottom: 1em;
+      }
+
       .pricing {
         background-color: var(--light-gray);
       }
@@ -659,20 +640,34 @@
       /* フッター */
       footer {
         background-color: var(--light-gray);
-        padding: 50px 0;
+        height: 140px; /* 高さを固定 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         width: 100%;
+        padding: 0 20px; /* 横の余白のみ */
+        box-sizing: border-box;
       }
 
-      .footer-logo {
-        height: 30px;
-        margin-bottom: 20px;
+      footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer img {
+        height: 80px; /* ロゴサイズ */
+        margin-bottom: 8px;
       }
 
       .copyright {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         color: var(--text-light);
+        margin: 0;
       }
+
 
       /* レスポンシブ調整 */
       @media (max-width: 768px) {
@@ -789,11 +784,13 @@
         }
 
         .target-card p {
-          font-size: 0.92rem;
-          line-height: 1.7;
-          text-align: left;
-        }
+        font-size: 0.92rem;
+        line-height: 1.7;
+        text-align: left;
+        padding-left: 12px;
+        padding-right: 12px; /* ← 左右に余白追加 */
       }
+     }
           
       @media (max-width: 480px) {
         :root {
@@ -806,7 +803,7 @@
         }
 
         .main-visual-logo {
-          width: 180px;
+          width: 280px;
           height: 180px;
           font-size: 1.6rem;
         }
@@ -822,6 +819,15 @@
         .service-card-content p {
           font-size: 0.85rem;
         }
+
+        @media (max-width: 480px) {
+          section h2 {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            word-break: keep-all;
+          }
+        }
+
         
         /* グリッドの調整 */
         .services-grid {
@@ -855,7 +861,7 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         gap: 32px;
-        animation: auto-scroll 40s linear infinite;
+        animation: auto-scroll 5s linear infinite;
         padding: 10px 0;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none; /* Firefox */
@@ -877,10 +883,6 @@
 
         .logo-track img:hover {
           transform: scale(1.05); /* ホバー時に少し拡大 */
-        }
-
-        /* スマホ対応のメディアクエリを追加 */
-        @media (max-width: 768px) {
           .logo-track img {
             height: 60px; /* タブレットでは少し大きく */
           }
@@ -888,7 +890,7 @@
 
         @media (max-width: 480px) {
           .logo-track img {
-            height: 70px; /* スマホではさらに大きく */
+            height: 100px; /* スマホではさらに大きく */
             margin: 0 15px; /* スマホでは余白も増やす */
           }
           
@@ -906,34 +908,220 @@
           transform: translateX(-50%);
         }
       }
-  </style>
 
+      /* オフ会写真スライダー */
+      .offkai-photo-gallery {
+        margin: 30px 0 50px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .photo-slider {
+        display: flex;
+        width: calc(240px * 12); /* 画像幅 × 枚数 */
+        animation: slider-loop 5s linear infinite;
+      }
+
+      .photo-slider img {
+        width: 240px;
+        height: 180px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      /* 無限ループアニメーション */
+      @keyframes slider-loop {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* スマホ表示調整 */
+      @media (max-width: 768px) {
+        .photo-slider img {
+          height: 180px; /* スマホでは少し小さめ */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .photo-slider img {
+          height: 150px; /* さらに小さいスマホでは更に小さく */
+        }
+      }
+
+      /* 会員の楽しみ方セクション */
+      .benefits {
+        background-color: var(--primary-bg);
+        padding: 80px 0;
+      }
+
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .benefit-card {
+        background-color: var(--white);
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .benefit-icon {
+        width: 150px;
+        height: auto; /* 高さを自動調整したい場合 */
+        background-color: var(--primary-bg);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .benefit-icon svg {
+        width: 32px;
+        height: 32px;
+        color: var(--primary);
+      }
+
+      .benefit-content {
+        flex: 1;
+      }
+
+      .benefit-content h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 12px;
+      }
+
+      .benefit-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--text-light);
+      }
+
+      /* レスポンシブ対応 */
+      @media (max-width: 768px) {
+        .benefits-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        
+        .benefit-card {
+          padding: 25px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .benefit-card {
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+        }
+        
+        .benefit-icon {
+          margin: 0 auto 15px;
+        }
+      }
+
+      .about-message {
+        background-color: #f8f5f2;
+        padding: 80px 0;
+      }
+
+      .about-message .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px; /* ← 画面端との余白 */
+      }
+
+      .section-intro {
+        text-align: left;
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+        font-size: 0.85rem;
+        line-height: 1.9;
+        color: #444;
+      }
+
+      .section-intro p {
+        margin-bottom: 1.5em; /* ブロック単位の余白を強調 */
+        line-height: 1.9;
+        text-align: justify;  /* 両端揃えで読みやすく */
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .section-intro strong {
+        display: block;
+        margin: 2.5em 0 1em;
+        font-weight: bold;
+        color: #c25f69;
+        font-size: 1.05rem;
+        line-height: 1.9;
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .section-intro .message-signature {
+        text-align: right;
+        margin-top: 3em;
+        font-style: italic;
+        color: #666;
+        font-size: 0.9rem;
+      }
+
+
+
+  </style>
 <body>
   <!-- 1. ヘッダー -->
-  <header>
-    <div class="container">
-      <div class="header-inner">
-        <img src="jimoport_logo" alt="ジモポート兵庫ロゴ" />
-      </div>
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <!-- ロゴは削除 -->
+      <!-- <img src="images/jimoport_logo.svg" alt="ジモポート兵庫ロゴ" class="logo" /> -->
     </div>
-  </header>
+  </div>
+</header>
+
 
   <!-- 2. メインビジュアル -->
-  <section class="main-visual">
-    <div class="container">
-      <div class="main-visual-content">
-        <div class="main-visual-logo">
-          <img src="images/jimoport_logo.svg" alt="ジモポート兵庫ロゴ" />
-            </div>
-        <h1>地域とつながる<br>会員制コミュニティ</h1>
-        <p>大人になって、"新しい友達ができる"っていいな。<br>
-          誰かと趣味の話がしたい。誰かと一緒に出かけたい。
-        </p>
-        <p>そんな"きっかけ"が増える場所 <br class="sp-only"> ── それがジモポート兵庫です。</p>
-        <a href="https://lin.ee/rM7ZIL9" class="cta-button">LINEに登録する</a>
+<section class="main-visual">
+  <div class="container">
+    <div class="main-visual-content">
+      <div class="main-visual-logo">
+        <img src="images/jimoport_logo.svg" alt="ジモポート兵庫ロゴ" />
       </div>
+      <h1>地域とつながる<br>もう一つのコミュニティ</h1>
+        <p>家でもない、職場でもない。<br>
+        自分らしくいられる"居場所"を、地元に。</p>
+        <p>趣味の仲間と出会い、語り合い、時には一緒に出かける。<br class="sp-only">
+        そんな"つながり"を生み出す場所<br class="sp-only">── それがジモポート兵庫です。</p>
+      <a href="https://lin.ee/rM7ZIL9" class="cta-button">LINEに登録する</a>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- 2.5 ジモパス加盟店スライドショー -->
 <section class="partner-logos">
@@ -943,11 +1131,23 @@
     <img src="images/stores/store03.jpg" alt="店舗C">
     <img src="images/stores/store04.jpg" alt="店舗D">
     <img src="images/stores/store05.jpg" alt="店舗E">
+    <img src="images/stores/store06.jpg" alt="店舗F">
+    <img src="images/stores/store07.jpg" alt="店舗G">
+    <img src="images/stores/store08.jpg" alt="店舗H">
+    <img src="images/stores/store09.png" alt="店舗I">
+    <img src="images/stores/store10.jpg" alt="店舗J">
+    <img src="images/stores/store11.PNG" alt="店舗K">
     <img src="images/stores/store01.jpg" alt="店舗A (loop)">
     <img src="images/stores/store02.jpg" alt="店舗B (loop)">
     <img src="images/stores/store03.jpg" alt="店舗C (loop)">
     <img src="images/stores/store04.jpg" alt="店舗D (loop)">
     <img src="images/stores/store05.jpg" alt="店舗E (loop)">
+    <img src="images/stores/store06.jpg" alt="店舗F (loop)">
+    <img src="images/stores/store07.jpg" alt="店舗G (loop)">
+    <img src="images/stores/store08.jpg" alt="店舗H (loop)">
+    <img src="images/stores/store09.png" alt="店舗I (loop)">
+    <img src="images/stores/store10.jpg" alt="店舗J (loop)">
+    <img src="images/stores/store11.PNG" alt="店舗K (loop)">
   </div>
 </section>
 
@@ -960,28 +1160,43 @@
         <p>趣味の仲間と出会ったり、<br class="sp-only">一緒にお店に行ったり、<br class="sp-only">ゆるやかなつながりを育みます。</p>
         <p>地域と「関わってみたい」あなたの背中を、<br class="sp-only">そっと押す存在でありたいと思っています。</p>
       </div>
+  <!-- ▼ ここに画像を追加 -->
+    <div class="concept-image">
+      <img src="images/top-img.png" alt="ジモポート兵庫のイメージ" />
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- 4. ターゲット -->
   <section class="target">
     <div class="container">
       <h2>こんな人に、知ってほしい。</h2>
       <div class="target-grid">
+        <!-- 気軽にご飯に誘える友達がほしい人 -->
         <div class="target-card">
-          <div class="target-card-image friends"></div>
+          <div class="target-card-image">
+            <img src="images/target01.png" alt="友達アイコン">
+          </div>
           <h3>気軽にご飯に誘える友達がほしい人</h3>
-          <p>職場と家を往復するだけの毎日。たまには誰かと飲みに行きたいけれど、気を遣う関係は疲れる。ジモポートでは、ゆるくつながれる相手が見つかるかもしれません。</p>
+          <p>職場と家を往復する毎日。たまには誰かと飲みに行きたいけれど、気を遣う関係には疲れてしまう。自然につながれる相手が見つかるかもしれません。</p>
         </div>
+
+        <!-- 趣味の話ができる仲間と出会いたい人 -->
         <div class="target-card">
-          <div class="target-card-image hobby"></div>
+          <div class="target-card-image">
+            <img src="images/target02.png" alt="趣味アイコン">
+          </div>
           <h3>趣味の話ができる仲間と出会いたい人</h3>
-          <p>カフェ巡り、写真、映画、温泉…「好き」が合う人と話すと、それだけでちょっと嬉しくなる。共通の"好き"でつながる部活動やチャットがあります。</p>
+          <p>カフェ巡り、写真、映画、温泉など、好きなことを共有できる仲間と話すと、少し嬉しくなる。共通の“好き”でつながる部活動やチャットがあります。</p>
         </div>
+
+        <!-- 地域に関わってみたいと思っている人 -->
         <div class="target-card">
-          <div class="target-card-image local"></div>
+          <div class="target-card-image">
+            <img src="images/target03.png" alt="地域アイコン">
+          </div>
           <h3>地域に関わってみたいと思っている人</h3>
-          <p>お店のこと、イベントのこと、人のこと。今まで通り過ぎていた場所も、誰かと関わるだけで景色が変わる。地域の魅力を、見る側から"伝える側"になってみませんか？</p>
+          <p>お店のこと、人のこと、イベントのこと。関わるだけで景色が変わることもあります。見る側から“伝える側”へ──そんな一歩を踏み出してみませんか？</p>
         </div>
       </div>
     </div>
@@ -990,16 +1205,37 @@
   <!-- 5. サービス一覧 -->
   <section class="services">
   <div class="container">
-    <h2 class="title-image">
-      <img src="service.png" alt="SERVICE" class="section-title-img">
-    </h2>
-      
+    <h2>利用できるサービス一覧</h2>
+
       <!-- サービス一覧（オフ会が1カラム） -->
       <div class="service-highlight">
-        <div class="service-highlight-image"></div>
+        <div class="service-highlight-image">
+          <img src="images/icon-event.png" alt="オフ会アイコン" />
+        </div>
         <div class="service-highlight-content">
           <h3>オフ会</h3>
           <p>地域の人と自然に出会える、ゆるやかな交流会。ランチや飲み会、まち歩きなど、初めてでも参加しやすい雰囲気です。</p>
+        </div>
+      </div>
+
+
+      <!-- 過去のオフ会写真スライドショー -->
+      <div class="offkai-photo-gallery">
+        <div class="photo-slider">
+          <img src="images/event/event01.jpg" alt="過去のオフ会の様子1">
+          <img src="images/event/event02.jpg" alt="過去のオフ会の様子2">
+          <img src="images/event/event03.jpg" alt="過去のオフ会の様子3">
+          <img src="images/event/event04.jpg" alt="過去のオフ会の様子4">
+          <img src="images/event/event05.jpg" alt="過去のオフ会の様子5">
+          <img src="images/event/event06.jpg" alt="過去のオフ会の様子6">
+
+          <!-- 以下はループ用の複製 -->
+          <img src="images/event/event01.jpg" alt="過去のオフ会の様子1 duplicate">
+          <img src="images/event/event02.jpg" alt="過去のオフ会の様子2 duplicate">
+          <img src="images/event/event03.jpg" alt="過去のオフ会の様子3 duplicate">
+          <img src="images/event/event04.jpg" alt="過去のオフ会の様子4 duplicate">
+          <img src="images/event/event05.jpg" alt="過去のオフ会の様子5 duplicate">
+          <img src="images/event/event06.jpg" alt="過去のオフ会の様子6 duplicate">
         </div>
       </div>
       
@@ -1007,150 +1243,173 @@
       <div class="services-grid">
         <!-- 1行目 -->
         <div class="service-card">
-          <div class="service-card-image club"></div>
+          <div class="service-card-image">
+            <img src="images/icon-club.png" alt="部活動アイコン">
+          </div>
           <div class="service-card-content">
             <h3>部活動</h3>
             <p>カフェ・カメラ・温泉など、趣味でつながる活動。専用チャットや定期的なオフライン活動で仲間との交流が深まります。</p>
           </div>
         </div>
-        
+
         <div class="service-card">
-          <div class="service-card-image pass"></div>
+          <div class="service-card-image">
+            <img src="images/icon-pass.png" alt="ジモパスアイコン">
+          </div>
           <div class="service-card-content">
             <h3>ジモパス</h3>
-            <p>提携店舗でドリンク特典や割引を受けられる会員限定パス。まち歩きがより楽しくなる特典がいっぱいです。</p>
+            <p>飲食店や小売店で割引やサービス提供される会員サービスです。地元のお店での食事やショッピングがよりお得になります。</p>
           </div>
         </div>
-        
+
         <!-- 2行目 -->
         <div class="service-card">
-          <div class="service-card-image report"></div>
+          <div class="service-card-image">
+            <img src="images/icon-report.png" alt="ジモレポアイコン">
+          </div>
           <div class="service-card-content">
             <h3>ジモレポ</h3>
-            <p>地元のお店や人を紹介する参加型レポート企画。SNSやWebに掲載され、地域の魅力を伝える一員になれます。</p>
+            <p>特定の飲食店やサービスを実際に利用し、調査レポートを報告していただきます。地元の飲食店に調査員として来店し、食事を楽しめます。</p>
           </div>
         </div>
-        
+
         <div class="service-card">
-          <div class="service-card-image school"></div>
+          <div class="service-card-image">
+            <img src="images/icon-school.png" alt="ジモスクアイコン">
+          </div>
           <div class="service-card-content">
             <h3>ジモスク</h3>
-            <p>Instagramやカメラなどのスキルアップ講座。地域発信に役立つ知識を、楽しく学べるミニ講座シリーズです。</p>
+            <p>大人の学びについてのプログラムを提供します。副業支援や、新しいスキルの習得を支援するために、ワークショップやセミナーを開催します。</p>
           </div>
         </div>
-        
+
         <!-- 3行目 -->
         <div class="service-card">
-          <div class="service-card-image news"></div>
+          <div class="service-card-image">
+            <img src="images/icon-news.png" alt="ジモニューアイコン">
+          </div>
           <div class="service-card-content">
-            <h3>ジモニュース</h3>
-            <p>新店オープンやイベントなど、地元の話題を配信。会員限定の情報も含む、リアルなローカルニュースです。</p>
+            <h3>ジモニュー</h3>
+            <p>地元の最新ニュースやイベント情報を提供します。新店舗の情報から、地域のイベントをいち早くキャッチすることができます。</p>
           </div>
         </div>
-        
+
         <div class="service-card">
-          <div class="service-card-image board"></div>
+          <div class="service-card-image">
+            <img src="images/icon-board.png" alt="ジモボードアイコン">
+          </div>
           <div class="service-card-content">
             <h3>ジモボード</h3>
-            <p>会員専用の掲示板。気になるお店の相談や、地域情報の交換など、気軽に質問や情報交換ができます。</p>
+            <p>地元の情報を共有するためのオンライン掲示板です。日々の生活から緊急時まで、メンバー同士で質問や情報交換ができる場として活用されます。</p>
           </div>
         </div>
-        
+
         <!-- 4行目 -->
         <div class="service-card">
-          <div class="service-card-image job"></div>
+          <div class="service-card-image">
+            <img src="images/icon-job.png" alt="ジモジョブアイコン">
+          </div>
           <div class="service-card-content">
             <h3>ジモジョブ</h3>
-            <p>地域に関わる仕事や副業の情報共有。お店のお手伝いなど、ちょっとした関わりからはじめる地域貢献です。</p>
+            <p>地元企業と働きたい人をマッチングするサービスです。転職や副業をサポートし、地域経済の活性化に貢献します。</p>
           </div>
         </div>
-        
+
         <div class="service-card">
-          <div class="service-card-image love"></div>
+          <div class="service-card-image love">
+            <img src="images/icon-love.png" alt="ジモ恋アイコン" />
+            <img src="images/coming-soon.png" alt="Coming Soon" class="coming-soon-badge" />
+          </div>
           <div class="service-card-content">
             <h3>ジモ恋</h3>
-            <p>同じ地域を好きな人と出会える交流会。共通の話題で自然な出会いが生まれる、婚活ではない緩やかな場です。</p>
+            <p>地元での出会いをサポートするサービスです。マッチングイベントを通じて、新しい出会いを提供。スポーツイベント、カフェ会などを準備中です。</p>
           </div>
         </div>
-        
+
         <!-- 5行目 -->
         <div class="service-card">
-          <div class="service-card-image shop"></div>
+          <div class="service-card-image">
+            <img src="images/icon-shop.png" alt="ジモショップアイコン">
+            <img src="images/coming-soon.png" alt="Coming Soon" class="coming-soon-badge">
+          </div>
           <div class="service-card-content">
             <h3>ジモショップ</h3>
-            <p>会員限定のグッズや地域コラボ商品。オリジナルのトートバッグや地元作家とのコラボアイテムを展開します。</p>
+            <p>「地産地消」をテーマにしたオンラインショップです。地域の特産品やお土産品を手軽に購入でき、生産者との繋がりを促進します。</p>
           </div>
         </div>
-        
+
         <div class="service-card">
-          <div class="service-card-image travel"></div>
+          <div class="service-card-image">
+            <img src="images/icon-travel.png" alt="ジモタビアイコン">
+            <img src="images/coming-soon.png" alt="Coming Soon" class="coming-soon-badge">
+          </div>
           <div class="service-card-content">
             <h3>ジモタビ</h3>
-            <p>近隣エリアへの小旅行企画。日帰りから一泊まで、会員同士で楽しむミニ旅行で新しい地域との出会いを作ります。</p>
+            <p>「大人の修学旅行」と題して、季節ごとの果物狩り、バーベキュー、スポーツアクティビティー、貸切バスでの観光ツアーなど、様々な企画を準備中です。</p>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
-<!-- 6. 会費プラン -->
-  <section class="pricing">
-    <div class="container">
-      <h2>会費プラン</h2>
-      <div class="section-intro">
-        <p>ジモポート兵庫は、有料の会員制コミュニティです。地域とつながるきっかけを増やしながら、運営の継続性と価値の還元を大切にしています。</p>
+<!-- 会費プラン -->
+<section class="pricing">
+  <div class="container">
+    <h2>会員プラン</h2>
+    <div class="section-intro--plan">
+      <p>ジモポート兵庫は、地域とつながる"きっかけ"を増やすための、有料の会員制コミュニティです。</p>
+    </div>
+    
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>💳 月額プラン</h3>
+        <div class="price">¥980</div>
+        <p class="price-note">税込・月額</p>
+        <p>まずは気軽に試したい方におすすめ。<br class="sp-only">1ヶ月ごとの自動更新です。</p>
       </div>
-      <div class="pricing-cards">
-        <div class="pricing-card">
-          <h3>💳 月額プラン</h3>
-          <div class="price">¥980</div>
-          <p class="price-note">税込・月額</p>
-          <p>まずは気軽に試したい方におすすめ。<br class="sp-only">1ヶ月ごとの自動更新です。</p>
-        </div>
-        <div class="pricing-card">
-          <h3>💰 年間プラン（一括）</h3>
-          <div class="price">¥9,800</div>
-          <p class="price-note">税込・年額</p>
-          <p>1年を通してじっくり楽しみたい方に。<br class="sp-only">実質2ヶ月分無料の割引プランです。</p>
-        </div>
+      <div class="pricing-card">
+        <h3>💰 年間プラン（一括）</h3>
+        <div class="price">¥9,800</div>
+        <p class="price-note">税込・年額</p>
+        <p>1年を通してじっくり楽しみたい方に。<br class="sp-only">実質2ヶ月分無料の割引プランです。</p>
       </div>
-      
-      <!-- 参加ステップ -->
-      <div class="steps-container">
-        <h3 class="steps-heading">参加する手順</h3>
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>公式LINEに登録</h3>
-              <p>下部のボタンから、公式LINEアカウントに友達登録をします。</p>
-            </div>
+    </div>
+    
+    <!-- 参加ステップ -->
+    <div class="steps-container">
+      <h3 class="steps-heading">参加する手順</h3>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>公式LINEに登録</h3>
+            <p>下のボタンから公式LINEに友達追加をしてください。案内に沿って参加申込をします。</p>
           </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>申込フォームの入力</h3>
-              <p>LINEで届く申込フォームに、簡単な自己紹介と希望プランを入力します。</p>
-            </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>申込フォームの入力</h3>
+            <p>公式LINEで届く申込フォームに、簡単な自己紹介と希望プランを入力してください。</p>
           </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>お支払い</h3>
-              <p>決済フォームから会費のお支払いをお願いします。クレジットカード決済が可能です。</p>
-            </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>お支払い</h3>
+            <p>決済フォームから会費のお支払いをお願いします。クレジットカード決済が可能です。</p>
           </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h3>会員専用グループに招待</h3>
-              <p>お支払い確認後、会員専用のLINEオープンチャットに招待されます。これで入会完了です！</p>
-            </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>会員専用グループに招待</h3>
+            <p>お支払い確認後、会員専用のLINEオープンチャットに招待されます。これで入会完了です！</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- 7. FAQ -->
 <section class="faq">
@@ -1203,22 +1462,100 @@
   </div>
 </section>
 
-  <!-- 8. メッセージ -->
-  <section class="message">
+<!-- 新セクション: 会員の楽しみ方 -->
+  <section class="benefits">
     <div class="container">
-      <h2>なぜジモポート兵庫を立ち上げたのか？</h2>
-      <div class="message-container">
-        <div class="message-box">
-          <p>はじめまして。ジモポート兵庫の運営をしている、<br class="sp-only"><strong>ﾀﾛｰ｜おでかけ兵庫</strong>です。</p>
-          <p>Instagramで「おでかけ兵庫」を始めてから、<br class="sp-only">兵庫県内のいろんな場所をめぐり、<br class="sp-only">たくさんの素敵なお店や人と出会ってきました。</p>
-          <p>けれど、どれだけ情報を発信しても、<br class="sp-only">「見るだけ」で終わってしまうことの多さに、<br class="sp-only">少しもどかしさを感じていました。</p>
-          <p>「応援したい」「行ってみたい」と思ったときに、<br class="sp-only">誰でも一歩踏み出せる場所があればいいのに。<br class="sp-only">そう思って立ち上げたのが、ジモポート兵庫です。</p>
-          <p>SNSだけではつながりきれない、<br class="sp-only">リアルな"人と人"のつながりを、地域の中に増やしたい。<br class="sp-only">ジモポは、そんな想いから生まれた「関わりの入り口」です。</p>
-          <p>あなたにとって、地元がちょっと楽しみになる場所になれたら嬉しいです。<br class="sp-only">ふらっと、気軽に、遊びにきてください。</p>
-          <div class="message-signature">
-            お会いできるのを楽しみにしています。<br>—— ﾀﾛｰ（おでかけ兵庫）
+      <h2>ジモポート兵庫での<br class="sp-only">楽しみ方</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <img src="images/benefit-icon01.png" alt="ジモレポのアイコン" />
+          </div>
+          <div class="benefit-content">
+            <h3>お得な特典をゲット - ジモレポ参加</h3>
+            <p>地域のお店を紹介するレポート企画。口コミレポートで魅力を伝えながら、3,000円〜5,000円相当の食事券をゲット。</p>
           </div>
         </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <img src="images/benefit-icon02.png" alt="オフ会のアイコン" />
+          </div>
+          <div class="benefit-content">
+            <h3>新しい友人と出会う - 定期オフ会</h3>
+            <p>月に数回開催される気軽な交流会。ランチや飲み会、まち歩きなど、自然な出会いが生まれる時間です。</p>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <img src="images/benefit-icon03.png" alt="ジモスクのアイコン" />
+          </div>
+          <div class="benefit-content">
+            <h3>実践的なスキルを学ぶ - ジモスク</h3>
+            <p>動画編集や生成AI、今すぐ役立つスキルアップ講座を受講できます。初心者向けから上級者向けまで幅広く開催中。</p>
+          </div>
+        </div>
+
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <img src="images/benefit-icon04.png" alt="ジモジョブのアイコン" />
+          </div>
+          <div class="benefit-content">
+            <h3>新たな可能性を探る - ジモジョブ</h3>
+            <p>地域の仕事や副業との出会いの場。自分のペースで関われる、やさしいスタイルのはたらき方を見つけられます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. メッセージ -->
+  <section class="about-message">
+  <div class="container">
+      <h2>おでかけ兵庫の<p>はじまりと、これから</p></h2>
+
+      <div class="section-intro">
+        <p><strong>■ きっかけは、小さな好奇心でした。</strong></p>
+        <p>「おでかけ兵庫」を始めたのは、2021年の夏。当時はコロナ禍で、気軽に人と会うことも、外に出かけることも難しい時期でした。</p>
+        <p>ニュースでは、夜20時以降の酒類提供禁止や4名以上の会食制限。理不尽にも思えるルールに、第三者ながら怒りを超えて呆れていました。でも、当時の自分には、何もできませんでした。</p>
+        <p>とある休みの日、出かけたいと思ってスマホを開いても、「なんか、ピンとこないな」と感じていました。</p>
+        <p>SNS上には、こんなに情報はあるのに、“今の自分”にぴったりな場所が見つからない。そんなモヤモヤが、心に残っていました。</p>
+        <p>「もし地元の飲食店や観光地だけに特化した情報があったら？」「誰かの役に立てるかもしれない。飲食店の応援になるかもしれない。」</p>
+        <p>そう思って立ち上げたのが、「おでかけ兵庫」でした。</p>
+
+        <p><strong>■ 届けた情報'だけ'では、大きく変わらないという気づき</strong></p>
+        <p>地元のお店やスポットを紹介するうちに、フォロワーは、少しずつ増えていきました。1年後には、10万人を超える人に届くメディアになっていました。</p>
+        <p>でも、同時に、ある疑問が頭をよぎりました。</p>
+        <p>「発信しても、“見るだけ”で終わってない？」「いいねや保存はされる。でも、実際に足を運ぶ人はどれくらいいるんだろう？」</p>
+        <p>“行ってみたい”と思っても、実際に行動に移すには、'何か'が足りない気がする。</p>
+        <p>誰かと行きたいけど誘える人がいない。ひとりで新しい場所に行くのは、ちょっと不安。──そんな“声にならない気持ち”が、確かにありました。</p>
+
+        <p><strong>■ 家でも職場でもない、もう一つの居場所</strong></p>
+        <p>大人になると、新しい出会いは減っていきます。仲のいい友達はいるけれど、いつものメンバーで、いつものお店。それも悪くない。でも、もう少しだけ、新しいことをやってみたい。あのときに感じた、「人と会えない」ことへの寂しさ。</p>
+        <p>その反動で実感したのは、「大人になってからできる友達って、なんかいい。」</p>
+        <p>経歴も年齢もバラバラだけど、好きなものが同じだったり、価値観が近かったり。“もう一つの居場所”を持てるって、すごく心地いい。</p>
+        <p>だからこそ、ただ情報を届けるだけじゃ足りないと。リアルな出会いや交流を生み出せる場所をつくりたい。</p>
+        <p>それこそが、おでかけ兵庫の'価値'であるに違いない。</p>
+        <p>そうして、たどり着いたのが、<strong>ジモポート兵庫</strong>という会員制コミュニティです。</p>
+
+        <p><strong>■ 僕が本当にやりたかったこと</strong></p>
+        <p>振り返ると、「おでかけ兵庫」でやりたかったことは、話題のスポットを紹介することでも、インフルエンサーとして有名になることでもなかったです。</p>
+        <p>やりたかったのは、こんな“きっかけ”をつくること。</p>
+        <p>地元に気軽に会える人がいて、応援したいお店が見つかって、何か新しいことに挑戦できる。</p>
+        <p>「行ってみたい」「会ってみたい」と思ったときに、誰でもふらっと、踏み出せる場所があったらいいなと。</p>
+        <p>ジモポート兵庫は、そんな一歩を応援する“関わりの入口”です。</p>
+        <p>どんな可能性があるのか、僕にとっても未知数です。けど、みんなで形を描いていけたらと思っています。</p>
+        <p>それくらいがちょうどいい。知らんけど。</p>
+
+        <p><strong>■ あなたにとっての「もう一つの居場所」になれたら</strong></p>
+        <p>ここまで読んでくださって、ありがとうございます。</p>
+        <p>「おでかけ兵庫」で出会った人たちと、地元をもっと楽しくする文化を育てていきたい。</p>
+        <p>もし今、「新しい楽しみが欲しい」「地元と、もう少し関わってみたい」</p>
+        <p>そんな気持ちがあったら、ぜひジモポート兵庫を覗いてみてください。</p>
+        <p>あなたのペースで、無理なくつながれる。ジモポート兵庫は、そんな'場所'を目指しています。</p>
+        <p>お会いできる日を、楽しみにしています。</p>
+        <p class="message-signature">—— 立谷太朗（おでかけ兵庫）</p>
       </div>
     </div>
   </section>
@@ -1227,85 +1564,58 @@
   <section class="cta">
     <div class="container">
       <h2>参加申込はこちら</h2>
-      <p>📅 <strong>次回募集期間：2025年5月20日〜31日</strong></p>
+      <p><strong>第2期 募集期間：2025年5月20日〜31日</strong></p>
       <p>登録だけでもOKです。<br class="sp-only">少しでも「面白そう」と感じたら、<br class="sp-only">まずはLINEから覗いてみてください。</p>
       <a href="https://lin.ee/rM7ZIL9" class="cta-button">LINEに登録する</a>
     </div>
   </section>
 
   <!-- 10. フッター -->
-  <footer>
-    <div class="container">
-      <img src="jimoport_logo" alt="ジモポート兵庫ロゴ" />
-      <p class="copyright">© 2025 ジモポート兵庫 All Rights Reserved.</p>
-    </div>
-  </footer>
+    <footer>
+      <div class="container">
+        <img src="images/jimoport_logo.svg" alt="ジモポート兵庫ロゴ" />
+        <p class="copyright">© 2025 ジモポート兵庫 All Rights Reserved.</p>
+      </div>
+    </footer>
 
-  <script>
-    // FAQのトグル機能
-    document.addEventListener('DOMContentLoaded', function() {
-      const faqQuestions = document.querySelectorAll('.faq-question');
-      
-      faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-          const answer = question.nextElementSibling;
-          const isOpen = answer.style.display === 'block';
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question');
+          const answer = item.querySelector('.faq-answer');
           
-          // 閉じる
-          if (isOpen) {
-            answer.style.display = 'none';
-            question.classList.remove('active');
-          } 
-          // 開く
-          else {
-            answer.style.display = 'block';
-            question.classList.add('active');
-          }
+          // 初期状態を閉じる
+          answer.style.maxHeight = '0';
+          answer.style.overflow = 'hidden';
+          answer.style.transition = 'max-height 0.3s ease, margin-top 0.3s ease';
+          answer.style.marginTop = '0';
+          
+          question.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+            
+            // すべてのFAQを一度閉じる
+            faqItems.forEach(i => {
+              i.classList.remove('open');
+              const ans = i.querySelector('.faq-answer');
+              ans.style.maxHeight = '0';
+              ans.style.marginTop = '0';
+              i.querySelector('.faq-question').classList.remove('active');
+            });
+            
+            if (!isOpen) {
+              // 少し待ってから開く（transitionが反映された後）
+              setTimeout(() => {
+                item.classList.add('open');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.style.marginTop = '15px';
+                question.classList.add('active');
+              }, 10); // 10ms程度で十分
+            }
+          });
         });
       });
-    });
-  </script>
-</body>
-</html>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      const answer = item.querySelector('.faq-answer');
-      
-      // 初期状態を閉じる
-      answer.style.maxHeight = '0';
-      answer.style.overflow = 'hidden';
-      answer.style.transition = 'max-height 0.3s ease, margin-top 0.3s ease';
-      answer.style.marginTop = '0';
-      
-      question.addEventListener('click', () => {
-        const isOpen = item.classList.contains('open');
-        
-        // すべてのFAQを一度閉じる
-        faqItems.forEach(i => {
-          i.classList.remove('open');
-          const ans = i.querySelector('.faq-answer');
-          ans.style.maxHeight = '0';
-          ans.style.marginTop = '0';
-          i.querySelector('.faq-question').classList.remove('active');
-        });
-        
-        if (!isOpen) {
-          // 少し待ってから開く（transitionが反映された後）
-          setTimeout(() => {
-            item.classList.add('open');
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-            answer.style.marginTop = '15px';
-            question.classList.add('active');
-          }, 10); // 10ms程度で十分
-        }
-      });
-    });
-  });
-</script>
-</body>
+    </script>
+  </body>
 </html>
